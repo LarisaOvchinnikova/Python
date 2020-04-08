@@ -1,6 +1,6 @@
 "# Python" 
 
 * [x] Hello
-* [x] Miles to foots
+* [x] Miles to feet
 * [x] Fahrenheit to Celsius
  
