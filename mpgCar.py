@@ -9,3 +9,5 @@ distance = float(input("What is distance to gas station?"))
 if miles < distance:
     print("you can not get gas station ")
 else: print("you have enough gas")
+print(f"You can drive {miles} and cost will be {price*tank} dollars")
+
