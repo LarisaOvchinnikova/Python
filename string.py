@@ -23,6 +23,22 @@ print("His age is %d" %age)
 print("%s is %d years old" %(name, age)) # old code
 print(f"Hello {name}, you are {age} years old")
 print(f"{name} "*5)
+print(name[0:2])
+print(name[:-1])  # from begin to (last-1)
+first = "Alice Moon"
+ind = first.index(' ')
+print(first[0:ind])
+print(first[ind+1:])
+print(first[::-1]) # reverse string - from first to last with step - 1
+print(first[::2]) # step 2
+print(f"{first[0]}.{first[ind+1]}.")
+print(f"{first[0:ind]}\n{first[ind+1:]}")
+
+
+
+
+
+
 
 
 
