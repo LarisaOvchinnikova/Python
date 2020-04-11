@@ -19,6 +19,7 @@ m = max(len(firstName), len(lastName), len(middleName))
 print(firstName.rjust(m))
 print(middleName.rjust(m))
 print(lastName.rjust(m))
+print(f"{firstName.rjust(m)}\n{middleName.rjust(m)}\n{lastName.rjust(m)}")
 
 # Strip the string of first 3 and last 3 characters
 word2 = input("Enter word: ")
