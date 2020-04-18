@@ -6,5 +6,5 @@ def ladder(n):
         else:
             str = str + "#" * (n - i)
     return str
-
-print(ladder(4))
+x = int(input("Enter number: "))
+print(ladder(x))
