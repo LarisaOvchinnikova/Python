@@ -19,7 +19,7 @@ for el in nums:
     sum += el
 print(sum)
 # ----------------------
-# 1,2,3,4...
+# 1, 2, 3, 4...
 # x = list(range(10))
 for num in range(10):
     print(num)
