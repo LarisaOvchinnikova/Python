@@ -42,7 +42,7 @@ for i in nums:
     if i > 0:
         sum  += i
     else:
-        break;
+        break
 print(sum)
 for i in range(20, 10, -2):
     print(i)
