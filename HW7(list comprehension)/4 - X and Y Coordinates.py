@@ -5,9 +5,9 @@ def convert_cartesian(x, y):
         lst.append((x[i], y[i]))
     return lst
 
-print(convert_cartesian([1, 5, 3, 3, 4], [5, 8, 9, 1, 0]) )
+#print(convert_cartesian([1, 5, 3, 3, 4], [5, 8, 9, 1, 0]) )
 # -----------
 x = [1,5,3,3,4]
 y = [5,8,9,1,0]
-lst = [(el, el1) for el in x  for el1 in y]
+lst = [(x[i], y[i]) for i in range(len(x))]
 print(lst)
