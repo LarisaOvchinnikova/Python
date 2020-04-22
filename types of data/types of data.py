@@ -68,6 +68,7 @@ for i in s:
 print(ob)
 
 # ---------
+s = "hello my dear"
 dct = {key:value for value, key in enumerate(s)}
 print(dct)
 
