@@ -1,11 +1,8 @@
 # Count Palindrome Numbers in a Range
 
 def isPalindrome(n):
-    rev = ''
     n = str(n)
-    for i in n:
-       rev = i + rev
-    return n == rev
+    return n == n[::-1]
 
 def count_palindromes(n, m):
     count = 0
