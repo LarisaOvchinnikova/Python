@@ -73,6 +73,6 @@ while True:
 
 
 print(data_base)
-print(f"list of users: {data_base.keys()}")
+
 
 
