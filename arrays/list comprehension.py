@@ -31,7 +31,8 @@ x = ["hello", "world", "sky", "blue"]
 x = [word.capitalize() for word in x]
 print(x)
 
-
-
+q = ['a', 'abc', 'aa', 'qwerty']
+z = [len(word) for word in q]
+print(z)
 
 
