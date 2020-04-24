@@ -64,10 +64,10 @@ while True:
                 if user_action == "3":
                     print("Our bank will take a commission 2%")
                     send_amount = input("Enter amount of money you want to send: ")
-                    if not sent_amount.isdigit():
+                    if not send_amount.isdigit():
                         print("Enter only digits")
                         continue
-                    sent_amount = int(send_amount)
+                    send_amount = int(send_amount)
 
                     print(" , ".join([username for username in data_base.keys()]))
 
