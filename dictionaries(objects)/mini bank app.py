@@ -21,7 +21,9 @@
 #         "balance": -1}
 # }
 
-data_base = {}
+data_base = {
+    "bank_balance": 0,
+}
 while True:
     action = input("Welcome to the Bank! Would you like to Log in[1], Register[2] or Quit[3]? ")
     if action == "3" or action.lower() == "quit":
@@ -50,20 +52,29 @@ while True:
                 if user_action == "1":
                     break
                 if user_action == "2":
-                    add_balance = int(input("Enter amount of money: "))
-                    data_base[username]['balance'] += add_balance
+                    print("Our bank will take a commission 5%")
+                    add_balance = input("Enter amount of money: ")
+                    if not add_balance.isdigit():
+                        print("Enter only digits")
+                        continue
+                    add_balance = int(add_balance)
+                    data_base["bank_balance"] += add_balance * 0.05
+                    data_base[username]['balance'] += add_balance * 0.95
                     print(f"Your current balance is {data_base[username]['balance']}")
                 if user_action == "3":
-                    send_amount = int(input("Enter amount of money you want to send: "))
-                    #if not send_amount.isdigit():
-                    #    print("Enter only digits")
-                     #   continue
+                    print("Our bank will take a commission 2%")
+                    send_amount = input("Enter amount of money you want to send: ")
+                    if not sent_amount.isdigit():
+                        print("Enter only digits")
+                        continue
+                    sent_amount = int(send_amount)
 
                     print(" , ".join([username for username in data_base.keys()]))
 
                     recipient = input("Enter recipient: ")
                     if recipient in data_base:
-                        data_base[username]['balance'] -= send_amount
+                        data_base["bank_balance"] += send_amount * 0.02
+                        data_base[username]['balance'] -= send_amount *  1.02
                         data_base[recipient]['balance'] += send_amount
                         print("Money sent")
                         print(f"Your current balance is {data_base[username]['balance']}")
