@@ -7,6 +7,8 @@ def getCentury(year):
         letters = 'st'
     elif cent == 2 or cent == 22:
         letters = 'nd'
+    elif cent == 3 or cent == 23:
+        letters = "rd"
     else:
         letters = 'th'
     return f"{math.ceil(year/100)}{letters} century"
