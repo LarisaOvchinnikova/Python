@@ -5,12 +5,11 @@
 def format_date(date, month, year):
     month_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November",
                   "December"]
-    month = month_list[month - 1]
     dct = {}
     for count, m in enumerate(month_list):
-        dct[m] = count + 1
+        dct[count+1] = m
 
-    return dct
+    return f"{dct[month]} {date}, {year}"
 
 
 print(format_date(5, 5, 1789))
