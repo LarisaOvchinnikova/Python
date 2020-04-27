@@ -25,9 +25,16 @@ print(dct)
 dct = {month: value * 10 for month, value in dct.items() }
 print(dct)
 
-# посчитать количество слов в строке с помощью list comprehension
+# посчитать количество букв в строке с помощью list comprehension
 text = "sky is blue"
 print(text.count("s"))
 
-dct = {key: text.count(key) for key in text}
+dct = {letter: text.count(letter) for letter in text}
+print(dct)
+
+# count words in text:
+text = "sun is yellow and sun is hot"
+arr = text.split(' ')
+print(arr)
+dct ={word: arr.count(word) for word in arr}
 print(dct)
