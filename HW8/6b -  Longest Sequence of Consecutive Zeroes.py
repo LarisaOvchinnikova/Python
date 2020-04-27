@@ -8,3 +8,6 @@ def longest_zero(s):
 print(longest_zero("01100001011000"))
 print(longest_zero("100100100"))
 print(longest_zero("1111"))
+
+# ------
+print('000'>'00')  #True
