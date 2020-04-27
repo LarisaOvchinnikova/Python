@@ -29,4 +29,5 @@ print(dct)
 text = "sky is blue"
 print(text.count("s"))
 
-#dct = {key: }
+dct = {key: text.count(key) for key in text}
+print(dct)
