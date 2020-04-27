@@ -84,3 +84,11 @@ print(z)
 z = a.intersection(b)
 w = b.intersection(a)
 print(z, w)
+
+# Difference  -- setA - setB те элементы a, которые не входят в b
+setA = {1,2,3,4}
+setB = {2,4,6,8}
+dif = setA - setB
+print(dif)   # ---> {1,3}
+print(setA.difference(setB)) # --> {1,3}
+print(setB.difference(setA)) # --> {6,8}
