@@ -30,3 +30,8 @@ print(text_list)
 for lst in text_list:
     print(lst, end = "")
 
+# -------------------
+f = open("my_text.txt")
+text_str = f.read()
+print(text_str.split())
+f.close()
