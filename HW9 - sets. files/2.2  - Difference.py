@@ -6,4 +6,5 @@ yesterday_users = ['user4', 'user3', 'user9', 'user10', 'user1', 'user8', 'user1
 users_today = set(today_users)
 users_yesterday = set(yesterday_users)
 users_lost = users_yesterday - users_today
-print(users_lost)
+gained = ",".join(users_lost)
+print(f"We lost: {gained}")
