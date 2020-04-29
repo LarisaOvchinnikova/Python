@@ -1,7 +1,10 @@
 def average_word_length(arr):
     lst = [len(word) for word in arr]
     s = sum(lst) / len(lst)
-    return s
+    return round(s)
 
-lst = ["banana", "apple", "grape", "mom", "a"]
-print(average_word_length(lst))
+#lst = ["banana", "apple", "grape", "mom", "a"]
+f = open("most_common_words.txt")
+arr = f.read().split()
+f.close()
+print(average_word_length(arr))
