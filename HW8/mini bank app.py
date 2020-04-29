@@ -20,6 +20,26 @@
 #         "password": "123122",
 #         "balance": -1}
 # }
+def password_validator(password):
+    res = 0
+    count1 = 0
+    count2 = 0
+    count3 = 0
+    for letter in password:
+        if letter.islower():
+            count1 += 1
+        if letter.isdigit():
+            count2 += 1
+        if letter.isupper():
+            count3 += 1
+    if count1 >= 2:
+        res += 1
+    if count2 >= 1:
+        res += 1
+    if count3 >= 1:
+        res += 1
+    return 6 <= len(password) <= 12 and res == 3
+
 
 data_base = {
     "bank_balance": 0,
@@ -34,6 +54,12 @@ while True:
             print("User is already exists")
             continue
         password = input("Enter password: ")
+        if (password_validator(password)):
+            print("Password is valid")
+        else:
+            print("Password is not valid!")
+            print("Password must:\nPassword must:contain at least 1 digit [0-9]\ncontain at least two lowercase chars [a-z]\ncontain at least one uppercase char [A-Z]\nbe between 6 and 12 chars long (both inclusive)")
+            continue
         data_base[username] = {
             "password" : password,
             "balance"  : 0,
