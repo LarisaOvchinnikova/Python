@@ -1,5 +1,6 @@
 def password_validator(password):
     res = 0
+    s_res = ''
     count_lower = 0
     count_digit = 0
     count_upper = 0
@@ -12,6 +13,8 @@ def password_validator(password):
             count_upper += 1
     if count_lower >= 2:
         res += 1
+    else:
+        s_res = "You need at least 2 lowercase letters\n "
     if count_digit >= 1:
         res += 1
     if count_upper >= 1:
