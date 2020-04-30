@@ -1,9 +1,10 @@
 # Find programmers with common languages
 def commmon_languages(dct):
-    common = {}
+    common = set(list(dct.values())[0])
+   # common = {}
     for values in dct.values():
-        if len(common) == 0:
-            common = set(values)
+       # if len(common) == 0:
+       #     common = set(values)
         common = common & set(values)
     return common
 print(commmon_languages({
