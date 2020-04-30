@@ -1,14 +1,8 @@
 def letter_scores_dict(arr):
     dct = {}
     for el in arr:
-        print(el)
-        print(el[0])
-        print(el[1])
-        #letters = el[1].split()
         s = el[1]
         s = s.replace(" ", "")
-        print(s)
-        #print(letters)
         for symb in s:
            dct[symb] = el[0]
     return dct

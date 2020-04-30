@@ -6,8 +6,6 @@ def calc_word_value(word):
                      'W': 4, 'Y': 4, 'K': 5, 'J': 8, 'X': 8, 'Q': 10, 'Z': 10}
     s = 0
     for letter in word:
-        #print(letter)
-        #print(letter_scores[letter])
         s += letter_scores[letter]
     return s
 
