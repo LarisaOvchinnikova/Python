@@ -1,20 +1,20 @@
 def password_validator(password):
     res = 0
-    count1 = 0
-    count2 = 0
-    count3 = 0
+    count_lower = 0
+    count_digit = 0
+    count_upper = 0
     for letter in password:
         if letter.islower():
-            count1 += 1
+            count_lower += 1
         if letter.isdigit():
-            count2 += 1
+            count_digit += 1
         if letter.isupper():
-            count3 += 1
-    if count1 >= 2:
+            count_upper += 1
+    if count_lower >= 2:
         res += 1
-    if count2 >= 1:
+    if count_digit >= 1:
         res += 1
-    if count3 >= 1:
+    if count_upper >= 1:
         res += 1
     return 6 <= len(password) <= 12 and res == 3
 

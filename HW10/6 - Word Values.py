@@ -18,7 +18,7 @@ def max_word_value(list_of_words):
             m = value
             res = w
 
-    return res, m
+    return res
 
 
 
