@@ -6,21 +6,21 @@ def calc_word_value(word):
                      'W': 4, 'Y': 4, 'K': 5, 'J': 8, 'X': 8, 'Q': 10, 'Z': 10}
     s = 0
     for letter in word:
-        # print(letter)
-        # print(letter_scores[letter])
+        #print(letter)
+        #print(letter_scores[letter])
         s += letter_scores[letter]
     return s
 
 
 def max_word_value(list_of_words):
-    dct = {}
-    for w in list_of_words[:80000]:
-        #print(w)
-        #print(calc_word_value(w))
-        dct[w] = calc_word_value(w)
+    m = 0
+    for w in list_of_words[:90000]:
+        value = calc_word_value(w)
+        if value > m:
+            m = value
+            res = w
 
-
-    return max(dct.values())
+    return res
 
 
 
@@ -29,5 +29,5 @@ words = f.read().split()
 print(len(words))
 f.close()
 print(max_word_value(words))
-# print(calc_word_value("fly"))
-#print(calc_word_value("barbeque"))
+#print(calc_word_value("fly"))
+# print(calc_word_value("barbeque"))

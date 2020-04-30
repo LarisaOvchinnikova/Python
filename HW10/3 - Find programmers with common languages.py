@@ -6,14 +6,16 @@ def commmon_languages(dct):
         x = set(values)
         print(x)
         arr.append(x)
+    print(arr)
     res = arr[0]
     for el in arr:
         res = res & el
+        print(res)
     return res
-
 print(commmon_languages({
-    'bob': ['JS', 'PHP', 'Python', 'Perl', 'Java'],
+
+'bob': ['JS', 'PHP', 'Python', 'Perl', 'Java'],
 'paul': ['C++', 'JS', 'Python'],
 'sara': ['Perl', 'C', 'Java', 'Python', 'JS'],
-'tim': ['Python', 'Haskell', 'C++', 'JS']
+'tim': ['Python', 'Haskell', 'C++']
 }))

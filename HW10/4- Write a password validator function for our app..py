@@ -12,10 +12,11 @@ def password_validator(password):
             count3 += 1
     if count1 >= 2:
         res += 1
+
     if count2 >= 1:
         res += 1
     if count3 >= 1:
         res += 1
-    return 6 <=len(password)<=12 and res == 3
+    return 6 <= len(password) <= 12 and res == 3
 
-print(password_validator("Alice1"))
+print(password_validator("Alice1%&&&"))
