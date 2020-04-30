@@ -14,13 +14,13 @@ def calc_word_value(word):
 
 def max_word_value(list_of_words):
     m = 0
-    for w in list_of_words[:90000]:
+    for w in list_of_words[:99000]:
         value = calc_word_value(w)
         if value > m:
             m = value
             res = w
 
-    return res
+    return res, m
 
 
 
