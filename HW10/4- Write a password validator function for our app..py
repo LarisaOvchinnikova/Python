@@ -12,7 +12,6 @@ def password_validator(password):
             count3 += 1
     if count1 >= 2:
         res += 1
-
     if count2 >= 1:
         res += 1
     if count3 >= 1:
