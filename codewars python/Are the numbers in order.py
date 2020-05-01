@@ -3,3 +3,6 @@ def in_asc_order(arr):
         if arr[i] > arr[i+1]:
             return False
     return True
+
+def in_asc_order(arr):
+    return arr == sorted(arr)
