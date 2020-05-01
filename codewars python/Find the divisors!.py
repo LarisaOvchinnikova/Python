@@ -1,0 +1,9 @@
+def divisors(n):
+    res = []
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            res.append(i)
+    if len(res) == 0:
+        return f"{n} is prime"
+    else:
+        return res
