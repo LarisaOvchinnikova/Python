@@ -7,3 +7,7 @@ def divisors(n):
         return f"{n} is prime"
     else:
         return res
+
+# --- 2 case:
+def divisors(n):
+    return [i for i in range(2, n) if n % i == 0] or f"{n} is prime"
