@@ -11,4 +11,4 @@ def DNA_strand(dna):
         "C": "G",
         "G": "C"
     }
-    return "".join([dct[x] for x in dna])
+    return "".join([dct[letter] for letter in dna])
