@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+# https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 def summation(num):
   sum = 0
   i = 1
