@@ -1,4 +1,4 @@
-answer = input("What orange vegetables souds like a parrot? ")
+answer = input("What orange vegetables sounds like a parrot? ")
 if answer == "carrot" or answer == "a carrot":
     print("Yes! You guessed it!")
 else:
