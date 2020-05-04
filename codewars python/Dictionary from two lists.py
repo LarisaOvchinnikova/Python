@@ -7,3 +7,13 @@ def createDict(keys, values):
     return dct
 
 print(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
+
+# --- 2 case
+def createDict(keys, values):
+    dct = dict(zip(keys, values))
+    if len(keys) > len(values):
+        dif = len(keys) - len(values)
+        for el in keys[-dif:]:
+            dct[el] = None
+
+    return dct
