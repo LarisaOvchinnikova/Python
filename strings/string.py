@@ -34,7 +34,10 @@ print(first[::2]) # step 2
 print(f"{first[0]}.{first[ind+1]}.")
 print(f"{first[0:ind]}\n{first[ind+1:]}")
 
-
+s = "book"
+print(s.rjust(10))
+print(s.ljust(10))
+print(s.center(10,"-"))
 
 
 
