@@ -10,3 +10,10 @@ def find_next_square(sq):
         return x
     else:
         return -1
+
+# ---2 case
+def find_next_square(n):
+    if (n ** 0.5).is_integer():
+        return ((n ** 0.5) + 1) ** 2
+    else:
+        return -1
