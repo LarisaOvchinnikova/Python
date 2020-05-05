@@ -4,3 +4,5 @@ def duplicate_count(text):
     s = set(lst)
     l = [el for el in s if el[1]>1]
     return len(l)
+
+print(duplicate_count("indivisibility"))
