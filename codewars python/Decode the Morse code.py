@@ -22,7 +22,7 @@ MORSE_CODE = {'.-': 'A', '-...': 'B', '-.-.': 'C',
 def decodeMorse(morse_code):
     #print(MORSE_CODE)
     lst_of_words = morse_code.split('   ')
-    #print(lst)
+    print(lst)
     res = ''
     for word in lst_of_words:
         word = word.split(' ')
