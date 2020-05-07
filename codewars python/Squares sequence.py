@@ -5,3 +5,7 @@ def squares(x, n):
         lst.append(p)
         p = p * p
     return lst
+
+# ---- 2 case
+def squares(x, n):
+    return [x ** (2 ** i)  for i in range(n)]
