@@ -84,6 +84,8 @@ print(lst2)
 
 
 
-
+s = 'abc'
+lst = list(s)
+print(" ".join(lst))
 
 
