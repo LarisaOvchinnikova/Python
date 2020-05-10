@@ -12,9 +12,8 @@ user_guess = [int(input("Enter number")) for i in range(5)]
 guessed = secret_lst & set(user_guess)
 total_score = 0
 # print(guessed)
-for i in guessed:
-   total_score += 5
-total_score *= len(guessed)
+
+total_score = 5 * len(guessed)**2
 print(f"You guessed {len(guessed)} numbers: {guessed}")
 print(f"List of numbers was: {secret_lst}")
 print(f"You have {total_score} points")
