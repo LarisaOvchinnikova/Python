@@ -13,7 +13,10 @@ for i in range(attempts):
     print("Guess missed number: ")
     print(sequence)
     answer = int(input("Enter your answer: "))
-    if answer == missed_number:
-        print("Good job!")
-    else:
-        print("Try next time")
+    while answer != missed_number:
+        if answer > missed_number:
+            print("Too big!")
+        elif answer < missed_number:
+            print("Too small")
+        answer = int(input("Enter your answer: "))
+    print("You got it!")
