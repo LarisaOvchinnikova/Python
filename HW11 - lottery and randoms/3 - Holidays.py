@@ -10,6 +10,10 @@ holidays = {
 "Thanksgiving": "Thu, Nov 26, 2020",
 "Christmas Day": "Fri, Dec 25, 2020"
 }
+dates = {
+    date(2020, 1, 1): "New Year's Day",
+    date
+}
 #print(holidays)
 # for key in holidays.keys():
 #     print(key)
