@@ -32,17 +32,17 @@ for i in range(0, len(dates), 2):
 print(holidays)
 
 # решаем задачу - какой ближайший праздник
-# today = date.today()  # для сегодняшней даты
-# print(today)  # 2020-05-10
+today = date.today()  # для сегодняшней даты
+print(today)  # 2020-05-10
 # или пишем любую датy:
 # today = date(2020, 1, 1)
 # или для даты, введенной пользователем:
 # today = input("Enter date in format: yy mm dd ").split()
 # today = date(int(today[0]), int(today[1]), int(today[2]))
 # а можно и так:
-today = input("Enter date in format: yy mm dd ")
-today = datetime.strptime(today, "%Y %B %d").date()
-print(today)
+# today = input("Enter date in format: yy mm dd ")
+# today = datetime.strptime(today, "%Y %B %d").date()
+# print(today)
 
 if today in holidays:
     print(f"Happy {holidays[today]}!")
