@@ -9,7 +9,7 @@ print("I still work")
 try:
     y = 5 / 0
     print(y)
-except ZeroDivisionError  :
+except ZeroDivisionError:
     print("Zero divizion")
 
 print("I still work")
