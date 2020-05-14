@@ -1,5 +1,4 @@
 from random import randint, choice
-
 def common_prefix(arr):
     start = 0
     end = 1
