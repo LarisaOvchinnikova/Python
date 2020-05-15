@@ -36,3 +36,4 @@ print(arr)
 del arr[0:2]
 print(arr)
 
+if arr.c
