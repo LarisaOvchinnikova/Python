@@ -16,3 +16,8 @@ def count_sheep(n):
     for i in range (1, n+1):
         s = s + f"{i} sheep..."
     return s
+
+# --- 3 case ---
+def count_sheep(n):
+    lst = [(str(i) + " sheep") for i in range(1, n+1)]
+    return "...".join(lst) + "..."
