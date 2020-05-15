@@ -9,3 +9,10 @@ def count_sheep(n):
         i = i + 1
     return s
 
+# -- 2 case---
+# If you can't sleep, just count sheep!!
+def count_sheep(n):
+    s = ""
+    for i in range (1, n+1):
+        s = s + f"{i} sheep..."
+    return s
