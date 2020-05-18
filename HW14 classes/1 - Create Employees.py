@@ -29,3 +29,19 @@ print(emp2.raise_rate)
 emp1.raise_rate = 1.2   # изменение толко для этого объектв
 print(emp1.raise_rate)
 print(emp2.raise_rate)
+
+# emp1 = Employee()
+# print(emp1.raise_rate)      # 1.05
+#
+# emp1.raise_rate_update()
+# print(emp1.raise_rate)   # 1.1
+#
+# emp1.raise_rate_update()
+# print(emp1.raise_rate)   # 1.15
+# emp1.raise_rate += 0.05  # 2-й способ
+#
+# emp2 = Employee()
+# print(emp2.raise_rate)   # 1.05
+#
+# Employee.raise_rate_update(emp1)
+# print(emp1.raise_rate)   # 1.1

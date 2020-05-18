@@ -8,29 +8,28 @@
 # Cоздайте метод apply_raise который бы повышал salary на raise_rate
 
 class Employee:
-    # def __init__(self, first_name, second_name, salary):
-    #     self.first_name = first_name
-    #     self.second_name = second_name
-    #     self.salary = salary
+    def __init__(self, first_name, second_name, salary):
+        self.first_name = first_name
+        self.second_name = second_name
+        self.salary = salary
     raise_rate = 1.05
     def raise_rate_update(self):
         self.raise_rate += 0.05
+    def full_name(self):
+        return f"Hello, I'm {self.first_name} {self.second_name}"
 
-#emp1 = Employee("Jonh", "Doe", 100000)
+emp1 = Employee("Jonh", "Doe", 100000)
+print(emp1.full_name())
 
-emp1 = Employee()
-print(emp1.raise_rate)      # 1.05
+emp2 = Employee("Alice", "Moon", 150000)
+print(emp2.full_name())
+print(Employee.full_name(emp2))
 
-emp1.raise_rate_update()
-print(emp1.raise_rate)   # 1.1
-
-emp1.raise_rate_update()
-print(emp1.raise_rate)   # 1.15
-emp1.raise_rate += 0.05  # 2-й способ
-
-emp2 = Employee()
-print(emp2.raise_rate)   # 1.05
-
-Employee.raise_rate_update(emp1)
-
-print(emp1.raise_rate)   # 1.1
+# print(Employee.raise_rate)  # 1.05
+# # print(Employee.salary)  # AttributeError: type object 'Employee' has no attribute 'salary'
+#
+# emp1.raise_rate_update()
+# print(emp1.raise_rate)
+#
+# Employee.raise_rate_update(emp1)
+# print(emp1.raise_rate)
