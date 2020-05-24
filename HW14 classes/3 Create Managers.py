@@ -22,6 +22,14 @@ class Employee:
     def __repr__(self):  # репрезентация объекта
         return f'{self.__class__.__name__}("{self.first_name}", "{self.second_name}", {self.salary})'
 
+    def add_salary(self, object):
+        return self.salary + object.salary
+
+    def __add__(self, other):
+        return self.salary + other.salary
+
+    def __sub__(self, other):
+        return self.salary - other.salary
 
 
 
@@ -49,6 +57,8 @@ class Manager(Employee):
         for emp in self.employees_list:
             print(f"{emp.first_name} {emp.second_name} with salary --> {emp.salary}")
 
+    def __len__(self):
+        return len(self.employees_list)
 
 emp1 = Employee("Jonh", "Doe", 100000)
 emp2 = Employee("Alice", "Moon", 150000)
@@ -60,6 +70,8 @@ print(emp1)
 print(len(emp1))
 
 print(manager1.employees_list)
+print(len(manager1))
+
 # manager1.add_employee(emp3)
 # print(manager1.employees_list)
 #
@@ -68,3 +80,7 @@ print(manager1.employees_list)
 # manager1.add_employee(emp3)
 #
 # manager1.print_emps()
+print(emp1.add_salary(emp3))  # работает функция add_salary
+
+print(emp1 + emp2)  # работает функция __add__
+print(emp1 - emp2)  # работает функция __sub__
