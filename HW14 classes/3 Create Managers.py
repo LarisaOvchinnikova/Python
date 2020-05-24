@@ -8,10 +8,21 @@ class Employee:
     raise_rate = 1.05
 
     def full_name(self):
-        return f"Hello, I'm {self.first_name} {self.second_name}"
+        return f"{self.first_name} {self.second_name}"
 
     def apply_raise(self):
         self.salary += self.raise_rate
+
+    def __str__(self):
+        return f"{self.first_name} {self.second_name} with salary --> {self.salary}"
+
+    def __len__(self):
+        return len(self.full_name())
+
+    def __repr__(self):  # репрезентация объекта
+        return f'{self.__class__.__name__}("{self.first_name}", "{self.second_name}", {self.salary})'
+
+
 
 
 class  Developer(Employee):
@@ -19,6 +30,7 @@ class  Developer(Employee):
         super().__init__(first_name, second_name, salary)
         self.language = language
         self.raise_rate = 1.1
+
 
 class Manager(Employee):
     def __init__(self, first_name, second_name, salary, employees_list):
@@ -42,15 +54,17 @@ emp1 = Employee("Jonh", "Doe", 100000)
 emp2 = Employee("Alice", "Moon", 150000)
 emp3 = Employee("Laura", "Sand", 50000)
 dev1 = Developer("Victor", "Bogutski", 200000, "JS")
-manager1 = Manager("Boss", "Manager", 300000, [emp1, emp2, dev1])
+manager1 = Manager("Boss", "Manager", 300000, [emp1, emp2, emp3, dev1])
 
+print(emp1)
+print(len(emp1))
 
 print(manager1.employees_list)
-manager1.add_employee(emp3)
-print(manager1.employees_list)
-
-manager1.remove_employee(emp3)
-print((manager1.employees_list))
-manager1.add_employee(emp3)
-
-manager1.print_emps()
+# manager1.add_employee(emp3)
+# print(manager1.employees_list)
+#
+# manager1.remove_employee(emp3)
+# print((manager1.employees_list))
+# manager1.add_employee(emp3)
+#
+# manager1.print_emps()
