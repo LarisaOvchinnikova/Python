@@ -49,16 +49,18 @@ class User:
     def __str__(self):
         return f"{self.first_name} {self.second_name}, balance --> {self.balance}"
 
+    def __repr__(self):
+        return f"User('{self.first_name}', '{self.second_name}', {self.password}', {self.balance})"
+
+    def __len__(self):
+        return len(self.dates_list)
+
     def add_register(self, register_day):
         self.dates_list.append(register_day)
         return self.dates_list
 
     def check_password(self):
         user_password = input("Enter your password: ")
-        # if user_password == self.password:
-        #     return f"Welcome to our bank, {self.full_name()}!"
-        # else:
-        #     return "Wrong password"
         return user_password == self.password
 
     def switch_password(self):
@@ -66,7 +68,7 @@ class User:
             new_password = input(f"{self.full_name()}, enter your new password: ")
             if password_validator(new_password) == True:
                 self.password = new_password
-                return "Your password is changed succesfully!"
+                return "Your password is changed successfully!"
             else:
                 return password_validator(new_password)
         else:
@@ -84,6 +86,10 @@ class User:
 
 
 user1 = User("John", "Doe", "qwerty", 10000)
+user2 = User("Donald", "Trump", "Melanie", 1000000)
+lst = [user1, user2]
+print(lst)
+print(len(user1))
 # print(user1.balance)
 # print(user1.full_name())
 #
@@ -93,4 +99,6 @@ user1 = User("John", "Doe", "qwerty", 10000)
 # user1.add_register(day)
 # print(user1.dates_list)
 # print(user1.check_password())
-print(user1.switch_password())
+#print(user1.switch_password())
+print(user1)
+print(user2)
