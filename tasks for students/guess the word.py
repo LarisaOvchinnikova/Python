@@ -1,5 +1,5 @@
 from random import randint
-arr = ["sunny", "light", "zebra", "crocodile", "panda", "monkey"]
+arr = ["computer", "tomato", "sunny", "light", "zebra", "crocodile", "panda", "monkey"]
 n = randint(0, len(arr))
 word = arr[n]
 spaces = ["." for i in range(len(word))]
