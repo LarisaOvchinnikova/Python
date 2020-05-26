@@ -8,5 +8,13 @@ def divide(a, b):
         print(err)
         return 0
 
+def add(a, b):
+    return a + b
 
-print(divide(10, 0))
+def main():
+    print(add(2,3))
+    pass
+
+if __name__ == "__main__":
+    main()
+    print("Hello from imported", __name__)

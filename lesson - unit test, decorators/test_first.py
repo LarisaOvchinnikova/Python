@@ -1,4 +1,5 @@
-from first import divide
+from first import *
+# from first import divide
 import pytest
 
 def test_divide():
@@ -14,3 +15,6 @@ def test_divide_exceptions():
 
 def test_divide_by_zero():
     assert divide(10, 0) == 0
+
+
+print(add(1,2))
