@@ -6,3 +6,4 @@ def capital(capitals):
         else:
             res.append(f"The capital of {el['country']} is {el['capital']}")
     return res
+print()
