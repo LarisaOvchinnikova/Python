@@ -3,3 +3,10 @@ class Cat(Animal):
         super().__init__(name)
     def speak(self):
         return f"{self.name} meows."
+
+
+
+# ---2 case
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} meows."
