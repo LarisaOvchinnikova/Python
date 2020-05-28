@@ -7,6 +7,7 @@ class Employee:
 
     raise_rate = 1.05
 
+    @property
     def full_name(self):
         return f"{self.first_name} {self.second_name}"
 
@@ -17,7 +18,7 @@ class Employee:
         return f"{self.first_name} {self.second_name} with salary --> {self.salary}"
 
     def __len__(self):
-        return len(self.full_name())
+        return len(self.full_name)
 
     def __repr__(self):  # репрезентация объекта
         return f'{self.__class__.__name__}("{self.first_name}", "{self.second_name}", {self.salary})'
@@ -84,3 +85,5 @@ print(emp1.add_salary(emp3))  # работает функция add_salary
 
 print(emp1 + emp2)  # работает функция __add__
 print(emp1 - emp2)  # работает функция __sub__
+
+print(emp1.full_name)
