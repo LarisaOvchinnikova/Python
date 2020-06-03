@@ -3,7 +3,7 @@ def narcissistic( value ):
     value = str(value)
     digits = len(value)
     for i in value:
-        sum = sum + int(i)**digits;
+        sum = sum + int(i)**digits
     if sum == int(value):
         return True
     else:
