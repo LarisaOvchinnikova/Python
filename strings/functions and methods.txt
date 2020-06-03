@@ -137,4 +137,4 @@ s.center(width,fillchar=" ")
 #s.maketrans("12345","abcde") # меняет символы попарно
 s = "123"
 s.maketrans("123","abc")
-print(s.ttans
+print(s)

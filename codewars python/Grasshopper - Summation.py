@@ -8,3 +8,7 @@ def summation(num):
         i = i + 1
     return sum
 
+# --- 2 case
+
+def summation(num):
+    return sum(list(range(1,num+1)))
