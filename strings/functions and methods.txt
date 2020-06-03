@@ -131,3 +131,10 @@ S.ljust(width, fillchar=" ")
 S.rjust(width, fillchar=" ")
 # Выравнивание по центру
 s.center(width,fillchar=" ")
+
+
+# ---------------------------
+#s.maketrans("12345","abcde") # меняет символы попарно
+s = "123"
+s.maketrans("123","abc")
+print(s.ttans
