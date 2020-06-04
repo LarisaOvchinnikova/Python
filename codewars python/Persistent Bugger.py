@@ -9,3 +9,14 @@ def persistence(n):
         count += 1
         p = 1
     return count
+
+# 2 case
+def persistence(n):
+    count = 0
+    while n > 9:
+        s = 1
+        for i in str(n):
+            s *= int(i)
+        count += 1
+        n = s
+    return count
