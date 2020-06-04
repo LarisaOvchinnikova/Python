@@ -40,6 +40,10 @@ print(s.ljust(10))
 print(s.center(10,"-"))
 
 
+s = 'hello'
+for i, char in enumerate(s):
+    print(i, char)
+
 
 
 
