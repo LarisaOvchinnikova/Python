@@ -6,3 +6,7 @@ def swap(string_):
         else:
              s = s + i.upper()
     return s
+
+# ---2 case
+def swap(string):
+    return string.swapcase()
