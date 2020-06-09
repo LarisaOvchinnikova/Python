@@ -30,4 +30,4 @@ elif word.isalnum():
     else:
         print("Has upper and lower and digits")
 
-        
+help()  #вызов помощи
