@@ -17,7 +17,17 @@ for i, char in enumerate(x):
     print(f"index {i} - {char}")
 
 word = "hello world"
-i = 0    
+i = 0
 while i < len(word):
     print(word[i])
     i += 1
+
+for number in 1, 2, 3, 4, 5:
+    print(number ** 2)
+
+for number in range(10):
+    print(number)
+
+text = "How are you?"
+for i in range(len(text)):
+    print(text[i])
