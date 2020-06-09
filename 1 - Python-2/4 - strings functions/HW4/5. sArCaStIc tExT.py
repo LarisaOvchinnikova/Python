@@ -9,3 +9,10 @@ def sarcastic(text):
 
 text = "the earth is flat"
 print(sarcastic(text))
+
+# --- 2 case
+def sarcastic(text):
+    return "".join([el if i % 2 == 0 else el.upper() for i, el in enumerate(text)])
+
+text = "the earth is flat"
+print(sarcastic(text))
