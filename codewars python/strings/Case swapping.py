@@ -10,3 +10,6 @@ def swap(string_):
 # ---2 case
 def swap(string):
     return string.swapcase()
+
+s = "1"
+print(s.isupper())
