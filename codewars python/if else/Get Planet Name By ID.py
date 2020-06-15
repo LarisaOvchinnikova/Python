@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/515e188a311df01cba000003
+
 def get_planet_name(id):
     name = {
         1: "Mercury",

@@ -1,5 +1,5 @@
 def narcissistic( value ):
-    sum = 0;
+    sum = 0
     value = str(value)
     digits = len(value)
     for i in value:

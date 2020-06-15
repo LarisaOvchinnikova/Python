@@ -1,3 +1,4 @@
+# https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
 def nb_year(p0, percent, aug, p):
     year = 0
     while p0 < p:
