@@ -1,8 +1,8 @@
 def get_military_time(us_time):
-    ampm = us_time[-2:]
+    time = us_time[-2:]
     minutes = us_time[3:5]
     hour = int(us_time[0:2])
-    if ampm == "PM":
+    if time == "PM":
         if hour != 12:
             hour = hour + 12
         elif hour == 12:
