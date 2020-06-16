@@ -8,3 +8,10 @@ if 5 in lst:   #работает очень быстро без прохода �
     print("yes")
 
 print(hash("from"))
+
+arr = [1,2,3,4]
+if type(arr) == list:
+    s = "".join([str(el) for el in arr])
+    print(type(arr))
+
+print(s)
