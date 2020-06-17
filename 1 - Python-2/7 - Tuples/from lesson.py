@@ -20,6 +20,8 @@ else:
 
 # тернарный оператор при записи list comprehension
 # value_if true if condition else value_if_false
+greet = "good day" if name[0].isupper() else "Howdy"
+print(greet)
 
 num = 5
 status = "Positive" if num > 0 else "Negative"
