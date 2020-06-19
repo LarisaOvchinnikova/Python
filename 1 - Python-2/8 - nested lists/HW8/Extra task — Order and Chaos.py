@@ -29,24 +29,22 @@ def get_point(value):
 def check_winner():
 
     for row in table:
+        if row.count(row[1]) == 5 and row[1] != "-" and row[5] != row[1] or row.count(row[1]) == 5 and row[1] != "-" and row[0] != row[1]:
+             print("The winner is player", row[1])
+             return False
 
-
-        # if row.count(row[0]) == 5 and row[0] != "-":
-        #     print("The winner is player", row[0])
-        #     return False
-
-    for i in range(5):
-        if table[0][i] == table[1][i] == table[2][i] == table[3][i] == table[4][i] and table[0][i] != "-":
-            print("The winner is player", table[0][i])
+    for i in range(6):
+        if table[0][i] == table[1][i] == table[2][i] == table[3][i] == table[4][i] and table[5][i] != table[0][i] and table[0][i] != '-' or table[1][i] == table[2][i] == table[3][i] == table[4][i] == table[5][i] and table[1][i] != table[0][i] and table[1][i] != '-':
+            print("The winner is player", table[1][i])
             return False
 
-    temp = [table[i][i] for i in range(5)]
-    if temp.count(temp[0] == 5 and temp[0] != "-"):
-        print("The winner is player", row[0])
+    temp = [table[i][i] for i in range(6)]
+    if temp.count(temp[1]) == 5 and temp[1] != temp[0] or temp.count(temp[1]) == 5 and temp[5] != temp[1]:
+        print("The winner is player", row[1])
         return False
 
-    if table[0][4] == table[1][3] == table[2][2] == table[3][1] == table[4][0] and table[0][4] != '-':
-        print("The winner is player", table[0][4])
+    if table[0][5] == table[1][4] == table[2][3] == table[3][2] == table[4][1] and table[4][1] != table[5][0] or table[1][4] == table[2][3] == table[3][2] == table[4][1] == table[5][0] and table[4][1] != table[0][5]:
+        print("The winner is player", table[1][4])
         return False
 
     return True

@@ -38,7 +38,7 @@ def check_winner():
             return False
 
     temp = [table[i][i] for i in range(5)]
-    if temp.count(temp[0] == 5 and temp[0] != "-"):
+    if temp.count(temp[0]) == 5 and temp[0] != "-":
         print("The winner is player", row[0])
         return False
 
