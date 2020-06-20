@@ -32,7 +32,7 @@ def check_winner():
             print("The winner is player", row[0])
             return False
 
-    for i in range (5):
+    for i in range(5):
         if table[0][i] == table[1][i] == table[2][i] == table[3][i] == table[4][i] and table[0][i] != "-":
             print("The winner is player", table[0][i])
             return False

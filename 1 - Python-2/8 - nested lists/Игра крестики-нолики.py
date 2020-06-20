@@ -5,7 +5,7 @@ table = [
 ]
 
 def draw():
-    # """TODO: Draw table
+    #  Draw table
     #  -------------
     #  | - | - | - |
     #  -------------
@@ -13,7 +13,7 @@ def draw():
     #  -------------
     #  | - | - | - |
     #  -------------
-    #  """
+
     print("-" * 13)
     for row in table:
         for cell in row:
@@ -23,51 +23,56 @@ def draw():
 
 
 def get_point(value):
-    """ TODO:
-    ask to input row and column
-    If point is valid, place the value
-    otherwise try again
-    """
-    point = input("Enter row and column number: ").split()
-    row, col = [int(x) - 1 for x in point]
-
-    while table[row][col] != "-":
-        print("Wrong cell! Try another one!")
+    while True:
         point = input("Enter row and column number: ").split()
+        if len(point) != 2:
+            print("You need to enter two digits")
+            continue
+
+        row, col = point
+        if not (row.isdigit() and col.isdigit()):
+            continue
+
         row, col = [int(x) - 1 for x in point]
+        if not (0 <= row < len(table) and 0 <= col < len(table)):
+            continue
 
-    table[row][col] = value
- #   return table
+        if table[row][col] != "-":
+            continue
 
-draw()
-get_point("X")
-draw()
-get_point("O")
-draw()
+        table[row][col] = value
+        break
+
 
 
 def check_winner():
-    """ TODO:
-    if there is no winner return True
-    otherwise print who won and return False"""
+    # horizontal rows:
     for row in table:
         if row.count(row[0]) == 3 and row[0] != "-":
             print("The winner is player", row[0])
             return False
 
-    for i in range (3):
-        if table[0][i] == table[1][i] == table[2][i] and table[0][i] != "-":
-            print("The winner is player", table[0][i])
-            return False
+    # vertical columns:
+    for i in range(len(table)):
+        temp = [table[j][i] for j in range(len(table))]
+        if temp.count(temp[0]) == len(table) and temp[0] != "-":
+           print("The winner is player", temp[0])
+           return False
 
-    temp = [table[i][i] for i in range(3)]
-    if temp.count(temp[0]) == 3 and temp[0] != "-":
-        print("The winner is player", row[0])
+    # main diagonal:
+    temp = [table[i][i] for i in range(len(table))]
+    if temp.count(temp[0]) == len(table) and temp[0] != "-":
+        print("The winner is player", temp[0])
         return False
 
-    if table[0][2] == table[1][1] == table[2][0] and table[0][2] != '-':
-        print("The winner is player", table[0][2])
+    # second diagonal:
+    temp = [table[i][len(table) - i - 1] for i in range(len(table))]
+    if temp.count(temp[0]) == len(table) and temp[0] != "-":
+        print("The winner is player", temp[0])
         return False
+    # if table[0][2] == table[1][1] == table[2][0] and table[0][2] != '-':
+    #     print("The winner is player", table[0][2])
+    #     return False
 
     return True
 
