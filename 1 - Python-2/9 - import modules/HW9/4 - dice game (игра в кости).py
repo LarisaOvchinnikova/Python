@@ -28,6 +28,7 @@ while computer_money > 0 and your_money > 0:
         computer_money -= bet
 
     print(f"Status: you have {your_money} euros, machine has {computer_money} euros")
+    print()
 
 if your_money > computer_money:
     print("YOU WIN!")
