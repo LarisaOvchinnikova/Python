@@ -24,4 +24,4 @@ def get_military(time):
             return f"{int(hours) + 12}:{minutes}"
 
 
-# print(get_military("12:30 AM"))
+#print(get_military("12:30 AM"))

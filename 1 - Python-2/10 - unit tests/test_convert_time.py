@@ -8,3 +8,8 @@ def test_get_military_AM():
 def test_get_military_PM():
    assert get_military("12:30 PM") == "12:30"
    assert get_military("11:30 PM") == "23:30"
+
+
+def test_get_military():
+   assert get_military("12:30 PM") == "12:30"
+   assert get_military("11:30 PM") == "23:30"
