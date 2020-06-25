@@ -94,9 +94,17 @@ print(setA.difference(setB)) # --> {1,3}
 print(setB.difference(setA)) # --> {6,8}
 
 # Difference between two collections
-a = ['a','b','z','d','e','d']
-b = ['a','b', 'j','j']
+a = ['a', 'b', 'z', 'd', 'e', 'd']
+b = ['a', 'b', 'j', 'j']
 setA = set(a)
 setB = set(b)
 print(setA - setB)
 print(setB - setA)
+
+
+# set from string
+s = "hello"
+set_s = set(s)
+print(set_s)            # {'o', 'e', 'l', 'h'}
+print(sorted((set_s)))  # ['e', 'h', 'l', 'o']
+# sorted превратидл set в отсортированный массив
