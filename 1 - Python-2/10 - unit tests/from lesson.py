@@ -18,7 +18,6 @@ def factorial(n):
 #     print("Wrong")
 
 
-
 def check(tested_value, exact_value):
     tested_value = factorial(tested_value)
     if tested_value == exact_value:
@@ -38,3 +37,11 @@ assert factorial(3) == 6
 # pip install pytest
 
 # для запуска надо после написания теста  в терминале писать pytest
+
+# для запуска только одного файла
+# pytest first.py
+
+print(__name__)   # __main__
+
+if __name__ == "__main__":
+    print("Hello")

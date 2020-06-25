@@ -1,4 +1,6 @@
-#from Replace With Alphabet Position import alphabet_position
+# from Replace With Alphabet Position import alphabet_position
+from random import randint
+
 
 def alphabet_position(text):
     text = text.lower()
@@ -11,4 +13,6 @@ def test_alphabet_position():
     assert alphabet_position(
         "The narwhal bacons at midnight.") == "20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20"
     assert alphabet_position("12345678") == ""
-    assert alphabet_position("a") == "1"
+    assert alphabet_position("a") == "a", "must be a number"
+
+
