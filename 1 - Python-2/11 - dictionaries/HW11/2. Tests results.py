@@ -1,4 +1,4 @@
-def test(r):
+def newtest(r):
     average = round(sum(r) / len(r), 3)
     dct = {
         "h": 0,
@@ -17,3 +17,8 @@ def test(r):
         return [average, dct, "They did well"]
     else:
         return [average, dct]
+
+
+
+print(newtest([10, 9, 9, 10, 9, 10, 9]))
+print(newtest([5, 6, 4, 8, 9, 8, 9, 10, 10, 10]))
