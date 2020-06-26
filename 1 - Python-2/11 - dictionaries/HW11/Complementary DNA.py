@@ -6,3 +6,6 @@ def DNA_strand(dna):
         "G": "C"
     }
     return "".join([dct[letter] for letter in dna])
+
+print(DNA_strand("ATTGC"))
+print(DNA_strand("GTAT"))
