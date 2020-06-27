@@ -76,3 +76,11 @@ names["Ann"] = 33
 print(names)
 names["Yury"] = names.get("Yury", 35) + 1
 print(names)
+
+
+# ----
+x = dict()
+print(x)  # {}
+
+# ----
+
