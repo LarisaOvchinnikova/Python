@@ -71,3 +71,8 @@ for person, age in names.items():  # итерация по ключам и зн�
 
 
 
+names = {}
+names["Ann"] = 33
+print(names)
+names["Yury"] = names.get("Yury", 35) + 1
+print(names)
