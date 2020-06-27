@@ -83,4 +83,8 @@ x = dict()
 print(x)  # {}
 
 # ----
+y = dict([('m', 8), ('n', 9)])
+print(y)
+x = dict(name = "John", age = 36, country = "Norway")
+print(x)
 
