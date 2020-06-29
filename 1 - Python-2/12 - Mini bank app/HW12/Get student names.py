@@ -1,12 +1,3 @@
-# def get_student_names(dct):
-#     arr = []
-#     for value in dct.values():
-#        # print(value)
-#         arr.append(value)
-#     arr.sort()
-#     return arr
-
-
 def get_student_names(dct):
     return sorted([value for value in dct.values()])
 
