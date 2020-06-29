@@ -1,10 +1,9 @@
 def oldest(dct):
-    arr_values = list(dct.values())
-    print(arr_values)
-    arr_values.sort(reverse=True)
-    m = arr_values[0]
+    arr = max(dct.values())
+    print(arr)
 
-    return m
+
+    #return
 
 print(oldest({
   "Emma": 71,

@@ -97,4 +97,5 @@ dct = {
 arr = list(dct.values())  # [71, 45, 15, 29]
 print(arr)
 
-print(dct.values())
+print(dct.values()) # dict_values([71, 45, 15, 29])
+print(sorted(dct.values())) # [15, 29, 45, 71]
