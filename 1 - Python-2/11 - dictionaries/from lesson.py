@@ -88,3 +88,13 @@ print(y)
 x = dict(name = "John", age = 36, country = "Norway")
 print(x)
 
+dct = {
+  "Emma": 71,
+  "Jack": 45,
+  "Amy": 15,
+  "Ben": 29
+}
+arr = list(dct.values())  # [71, 45, 15, 29]
+print(arr)
+
+print(dct.values())
