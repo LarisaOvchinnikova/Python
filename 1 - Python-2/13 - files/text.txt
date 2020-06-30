@@ -1,0 +1,2 @@
+Hello from file writerHello from
+hello again
