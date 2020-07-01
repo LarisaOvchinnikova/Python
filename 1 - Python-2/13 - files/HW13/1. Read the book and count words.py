@@ -16,8 +16,12 @@ print(stop_words)
 dct = {text.count(word): word for word in text if not word in stop_words}
 print(dct)
 arr = list(dct.items())
+print('----')
+print(arr)
 arr.sort(reverse=True)
-dct = {word: count for count, word in enumerate(arr)}
-print(dict(arr[:10]))
+dct = {word[1]: arr.count(word[1]) for word in arr}
+print(dict(list(dct)[:10]))
 x.close()
 y.close()
+
+#sorted(dct.values())
