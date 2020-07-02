@@ -1,6 +1,8 @@
 year = input("Enter the year: ")
 name = input("Enter the name: ")
 x = open(f"babynamesranking{year}.txt")
+
+
 text = x.readlines()
 fl = False
 for string in text:
