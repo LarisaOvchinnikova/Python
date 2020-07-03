@@ -4,11 +4,9 @@ f.close()
 arr = []
 for lines in emails:
     if lines.startswith("From:"):
-        print(lines)
         lines = lines.split()
-        print(lines)
-        arr.append(lines[:2])
-print(len(arr))
+        arr.append(" ".join(lines[:2]))
+
 print(arr)
 
 
