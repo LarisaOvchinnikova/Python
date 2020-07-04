@@ -1,4 +1,4 @@
-f = open("mbox.txt")
+f = open("mbox.txt", r)
 emails = f.readlines()
 f.close()
 arr = []
