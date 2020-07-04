@@ -10,6 +10,15 @@ for line in file:
 
 print(emails)
 
-for get_email in emails:
-    print(get_email)
 
+
+file_to_write = open("only_emails.txt", "w")
+# for get_email in emails:
+#     file_to_write.write(get_email) # записали в файл все одной строкой
+
+#file_to_write.write("\n".join(emails)) # 1 способ
+
+for new in emails:
+    file_to_write.write(new+'\n')
+
+file_to_write.close()
