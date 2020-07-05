@@ -10,7 +10,10 @@ def calc_word_value(word):
 
 
 def max_word_value(words):
-    return max([calc_word_value(word) for word in words[:50000]])
+    x = max([calc_word_value(word) for word in words[:50000]])
+    for word in words:
+        if calc_word_value(word) == x:
+            return word
 
 
 f = open("full_dictionary.txt")
