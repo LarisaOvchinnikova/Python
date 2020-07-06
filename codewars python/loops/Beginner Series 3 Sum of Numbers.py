@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/55f2b110f61eb01779000053
 def get_sum(a,b):
    s = 0
    first = min(a,b)
