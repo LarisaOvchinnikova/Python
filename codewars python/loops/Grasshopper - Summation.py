@@ -12,3 +12,7 @@ def summation(num):
 
 def summation(num):
     return sum(list(range(1,num+1)))
+
+
+def summation(num):
+    return sum(range(1, num+1))
