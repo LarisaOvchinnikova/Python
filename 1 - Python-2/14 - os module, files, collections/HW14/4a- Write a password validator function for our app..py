@@ -24,11 +24,12 @@ def password_validator(password):
         if not condition:
             output += f"{msg}.\n"
 
-    if not output:
-        return True
-    else:
-        return output
+    # if not output:
+    #     return True
+    # else:
+    #     return output
 
+    return True if not output else output
 
 print(password_validator("Alic11"))
 print(password_validator("laRisa171"))
