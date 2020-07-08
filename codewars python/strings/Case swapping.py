@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/5590961e6620c0825000008f
 def swap(string_):
     s = ""
     for i in string_:
