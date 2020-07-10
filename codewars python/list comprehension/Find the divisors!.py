@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/544aed4c4a30184e960010f4/python
 def divisors(n):
     res = []
     for i in range(2, n // 2 + 1):
