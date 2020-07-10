@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/5546180ca783b6d2d5000062
 def squares(x, n):
     lst = []
     p = x
