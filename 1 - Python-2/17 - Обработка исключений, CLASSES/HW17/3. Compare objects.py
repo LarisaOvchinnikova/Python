@@ -1,6 +1,7 @@
 class Person:
     name = ""
     age = 1
+
     def compare_age(self, object):
         if self.age < object.age:
             return f"{object.name} is older than me."

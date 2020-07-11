@@ -1,6 +1,7 @@
 class Book:
-    title = ""
-    author = ""
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
 
     def get_title(self):
         return f"Title: {self.title}"
@@ -9,20 +10,17 @@ class Book:
         return f"Author: {self.author}"
 
 
-HP = Book()
-HP.title = "Harry Potter"
-HP.author = "J.K. Rowling"
+HP = Book("Harry Potter", "J.K. Rowling" )
+
 print(HP.get_title())
 print(HP.get_author())
 
-TS = Book()
-TS.title = "The Adventures of Tom Sawyer"
-TS.author = "Mark Twain"
+TS = Book("The Adventures of Tom Sawyer", "Mark Twain")
+
 print(TS.get_title())
 print(TS.get_author())
 
-GWW = Book()
-GWW.title = "Gone with the Wind"
-GWW.author = "Margaret Mitchell"
+GWW = Book("Gone with the Wind", "Margaret Mitchell")
+
 print(GWW.get_title())
 print(GWW.get_author())
