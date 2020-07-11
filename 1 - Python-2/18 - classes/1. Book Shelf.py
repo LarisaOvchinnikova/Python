@@ -9,6 +9,9 @@ class Book:
     def get_author(self):
         return f"Author: {self.author}"
 
+    def __len__(self):
+        return len(self.author)
+
 
 HP = Book("Harry Potter", "J.K. Rowling" )
 
@@ -24,3 +27,5 @@ GWW = Book("Gone with the Wind", "Margaret Mitchell")
 
 print(GWW.get_title())
 print(GWW.get_author())
+
+print(len(HP))
