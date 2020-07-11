@@ -4,17 +4,15 @@ class Country:
         self.name = name
         self.population = population
         self.area = area
-
-    def density(self):
-        return self.population / self.area
+        self.density = self.population / self.area
 
     def is_big(self):
         return self.population > 250000000 or self.area > 3000000
 
     def compare_pd(self, object):
-        if self.density() < object.density():
+        if self.density < object.density:
             return f"{self.name} has a smaller population density than {object.name}"
-        elif self.density() > object.density():
+        elif self.density > object.density:
             return f"{self.name} has a larger population density than {object.name}"
         else:
             return f"{self.name} has the same population density as {object.name}"
