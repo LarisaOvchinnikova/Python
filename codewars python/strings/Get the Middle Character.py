@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/56747fd5cb988479af000028/python
 def get_middle(s):
     n = len(s) // 2
     if len(s) % 2 == 0:

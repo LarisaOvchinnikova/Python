@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/5768a693a3205e1cc100071f
 def initialize_names(name):
     arr = name.split()
     if len(arr) == 1:
