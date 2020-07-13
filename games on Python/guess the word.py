@@ -1,8 +1,8 @@
-from random import randint, choice
+from random import choice
 arr = ["computer", "tomato", "sunny", "light", "zebra", "crocodile", "panda", "monkey"]
 
 word = choice(arr)
-print(word)
+# print(word)
 spaces = ["." for i in range(len(word))]
 print("".join(spaces))
 print("Guess the word: ")
