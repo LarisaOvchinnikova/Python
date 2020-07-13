@@ -1,5 +1,5 @@
-https://www.codewars.com/kata/54bb6ee72c4715684d0008f9/train/python
-
+# https://www.codewars.com/kata/54bb6ee72c4715684d0008f9/train/python
+# 6 kyu difficult for childs
 
 def solution(number):
     n5 = (number - 1) // 5
