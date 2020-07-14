@@ -7,6 +7,7 @@ class Employee:
         self.email = f"{first_name}.{last_name}@company.com"
 
     def apply_raise(self):
+        #self.salary *= Employee.raise_rate
         self.salary *= self.raise_rate
 
     def __str__(self):
