@@ -6,3 +6,6 @@ def reverse(n):
         r = r * 10 + last
         n = n//10
     return r
+
+def reverse(n):
+    return int(str(n)[::-1])
