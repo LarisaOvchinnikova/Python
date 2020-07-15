@@ -1,3 +1,4 @@
+#https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/python
 def narcissistic( value ):
     sum = 0
     value = str(value)
