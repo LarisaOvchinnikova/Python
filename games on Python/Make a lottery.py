@@ -6,7 +6,7 @@ while len(secret_lst) < 5:
 # print(secret_lst)
 
 print("I have a list of 5 numbers from 1 to 10, try to guess it")
-user_guess = [int(input("Enter number")) for i in range(5)]
+user_guess = [int(input("Enter number: ")) for i in range(5)]
 # print(user_guess)
 
 guessed = secret_lst & set(user_guess)
