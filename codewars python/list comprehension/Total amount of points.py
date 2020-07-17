@@ -1,3 +1,4 @@
+# https://www.codewars.com/kata/5bb904724c47249b10000131
 def points(games):
     s = 0
     for el in games:
