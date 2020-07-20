@@ -1,0 +1,19 @@
+*Пример 1.* Создайте python file с именем poem.py и напишите программу, которая напечатает ваше любимое стихотворение.
+
+1. Щелкните правой кнопкой по названию проекта PythonLessons
+
+2. Выберите New - Python File - введите имя файла poem. Расширение файлу будет присвоено автоматически.
+
+![newFile](https://github.com/bogutski/jsp/blob/master/Python/poem2.png?raw=true)
+
+3. В созданном файле наберите несколько команд print, каждая из которых печатает одну строку стихотворения.
+Например, это может выглядеть так:
+```
+print("Twinkle, twinkle, little star,")
+print("How I wonder what you are!")
+print("Up above the world so high,")
+print("Like a diamond in the sky.")
+```
+4. Запустите программу и убедитесь, что результат работы программы - стихотворение, напечатанное в терминале.
+
+![rezult](https://github.com/bogutski/jsp/blob/master/Python/poemResult.png?raw=true)
