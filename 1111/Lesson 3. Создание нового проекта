@@ -1,0 +1,9 @@
+Создадим проект, в котором мы и будем создавать все наши программы на языке Python.
+
+1. Откройте PyCharm. Выберите "Create New project"
+
+![create project](https://github.com/bogutski/jsp/blob/master/Python/createNew.png?raw=true)
+
+2. Укажите папку и название проекта, например, D:\PythonLessons.  Нажмите кнопку Create
+
+![newProject](https://github.com/bogutski/jsp/blob/master/Python/newproject.png?raw=true)
