@@ -42,4 +42,10 @@ if b > 0:
     linear = f"{a} x + {b}"
 else:
     linear = f"{a} x - {-b}"
-print(linear)    
+print(linear)
+
+num = int(input("Enter number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
