@@ -1,0 +1,42 @@
+Установим Python 3
+
+Шаги для Mac и Windows практически одинаковые.
+
+- Зайдите на https://www.python.org/
+
+- В верхнем меню наведите на Downloads и нажмите на кнопку как на картинке. Версия на кнопке может быть новее.
+
+![setup1](https://github.com/bogutski/jsp/blob/master/Python/setup1.png?raw=true)
+
+- На Mac нажимайте все время Continue или Agree
+![setup2](https://github.com/bogutski/jsp/blob/master/Python/setup2.png?raw=true)
+
+- Для Windows на первом экране нужно отметить Add Python to PATH
+
+![setup3](https://github.com/bogutski/jsp/blob/master/Python/setup3.png?raw=true)
+
+**Установим редактора кода**
+
+- Скачайте и установите Toolbox https://www.jetbrains.com/toolbox-app
+Toolbox используется для установке редаторов кода от компании JetBrains, в том числе и PyCharm.
+После инсталяции должна появиться такая иконка. На Windows иконка Toolbox будет рядом с часами.
+
+![setup4](https://github.com/bogutski/jsp/blob/master/Python/setup4.png?raw=true)
+
+
+- Найдите в списке PyCharm Community и нажмите Install.
+
+PyCharm Community – бесплатная версия редактора кода для программистов Python.
+Установка может занять несколько минут. После установки вы увидите PyCharm Community в списке установленных. Нажмите на него.
+
+![setup5](https://github.com/bogutski/jsp/blob/master/Python/setup5.png?raw=true)
+
+- На всех вопросах нажимайте Next
+
+![setup6](https://github.com/bogutski/jsp/blob/master/Python/setup6.png?raw=true)
+![setup7](https://github.com/bogutski/jsp/blob/master/Python/setup7.png?raw=true)
+![setup8](https://github.com/bogutski/jsp/blob/master/Python/setup8.png?raw=true)
+![setup9](https://github.com/bogutski/jsp/blob/master/Python/setup9.png?raw=true)
+![setup10](https://github.com/bogutski/jsp/blob/master/Python/setup10.png?raw=true)
+
+Редактор кода установлен.
