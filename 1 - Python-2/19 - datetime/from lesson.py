@@ -62,4 +62,9 @@ else:
     print(f"It's {(new_year-day).days} days until the new Year")
     print(f"It's {(day - old_year).days} days past the last new Year")
 
+
 #
+
+s = '2000-01-01 00:00:00'
+time = datetime.strptime(s, "%Y-%m-%d %H:%M:%S")
+print(time - timedelta(seconds=1))
