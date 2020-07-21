@@ -14,4 +14,12 @@ def num_of_leapyears(s):
 
 print(num_of_leapyears("1980-1984"))
 print(num_of_leapyears("2000-2020"))
-print(num_of_leapyears("1600-2000"))
+print(num_of_leapyears("1600-2000")) #98
+
+# 2 case:
+import calendar
+leap = 0
+for year in range(1600, 2001):
+    if calendar.isleap(year):
+        leap += 1
+print(leap) # 98

@@ -22,7 +22,7 @@
 
 word = "additional"
 print(word.rindex("a")) # 8 (индекс первой буквы "a" в строке)
-#print(word.rindex("b"))  # ValueError: substring not found
+# print(word.rindex("b"))  # ValueError: substring not found
 
 text = "My eyes are blue"
 print(text.index("blue")) # 8 (индекс вхождения  строки "blue")
@@ -35,3 +35,6 @@ print(text.count("o"))
 
 text = "To be or not to be"
 print(text.count("be"))   # 2
+
+a = 8
+b =
