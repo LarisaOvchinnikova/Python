@@ -3,9 +3,10 @@ from datetime import  date
 def is_valid_date(year, month, day):
     try:
         day_check = date(year, month, day)
+        return True
     except ValueError:
         return False
-    return True
+
 
 print(is_valid_date(2020, 15, 2)) # False (month = 15)
 print(is_valid_date(-2020, 5, 4)) # False (year < 0)
