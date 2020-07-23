@@ -6,6 +6,7 @@ for i in range(20):
     t.up()
     t.fd(8)
     t.down()
+
 t.left(90)
 t.fd(100)
 t.left(90)
