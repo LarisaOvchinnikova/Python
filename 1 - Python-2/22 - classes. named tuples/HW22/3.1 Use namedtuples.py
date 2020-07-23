@@ -1,0 +1,1 @@
+workout = ('Chest+biceps', 'Monday', 45)
