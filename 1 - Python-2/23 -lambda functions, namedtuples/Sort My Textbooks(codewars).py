@@ -4,5 +4,11 @@ def get_first(element):
 
 def sorter(textbooks):
     lst = [(el.lower(), el) for el in textbooks]
-    lst1 = sorted(lst,key=get_first)
+    lst1 = sorted(lst, key=get_first)
     return [el[1] for el in lst1]
+
+def sorter(textbooks):
+    return sorted(textbooks, key=str.lower)
+
+def sorter(textbooks):
+    return sorted(textbooks, key=lambda x: x.lower())
