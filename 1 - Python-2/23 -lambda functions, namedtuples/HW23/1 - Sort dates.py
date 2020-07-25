@@ -9,3 +9,5 @@ dates = [date(2018, 10, 5), date(2018, 7, 20),
         date(2008, 3, 18)]
 
 print(sorted(dates,key=get_day))
+# или:
+print(sorted(dates, key=lambda el: el.day))

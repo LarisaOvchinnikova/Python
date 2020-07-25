@@ -57,16 +57,20 @@
 # print("      Ava")
 # print("Charlotte")
 # print("    Smith")
-print("my flowers are beautiful".capitalize())
-print("my flowers are beautiful".title())
-print("CODEWars".lower())
-print("aBcDe".swapcase()) # AbCdE
+# print("my flowers are beautiful".capitalize())
+# print("my flowers are beautiful".title())
+# print("CODEWars".lower())
+# print("aBcDe".swapcase()) # AbCdE
+#
+# num = "12"
+# num = num.zfill(4)
+# print(num)
+#
+# print("Hello world".startswith("H")) # True
+# print("Hello world".startswith("h")) # False
+# print("Hello world".endswith("rld")) # True
+# print("Hello world".endswith("!")) # False
 
-num = "12"
-num = num.zfill(4)
-print(num)
-
-print("Hello world".startswith("H")) # True
-print("Hello world".startswith("h")) # False
-print("Hello world".endswith("rld")) # True
-print("Hello world".endswith("!")) # False
+vowels = "aeuio"
+letter = input("Enter letter: ")
+print(not letter.lower() in vowels)
