@@ -71,6 +71,28 @@
 # print("Hello world".endswith("rld")) # True
 # print("Hello world".endswith("!")) # False
 
-vowels = "aeuio"
-letter = input("Enter letter: ")
-print(not letter.lower() in vowels)
+# vowels = "aeuio"
+# letter = input("Enter letter: ")
+# print(not letter.lower() in vowels)
+
+s = "sky!"
+print(s.isalpha())
+year = "2020"
+print(year.isdigit())
+print("23,5".isdigit())
+s = "May9"
+print(s.isalnum())
+print(" ".join(["a", "b", "c"]))
+
+name = "**Alice"
+print(name.lstrip("*"))
+print("     Hello world!  ". lstrip())
+password = "qwerty!!!"
+print(password.rstrip("!"))
+print("A like Python!    ". rstrip())
+s = "Sky is blue and the weather is beautiful"
+new_s = s.replace("is", "was")
+print(new_s)
+s = "Apples. bananas. limes. peaches. plums. Buy now. Low prices."
+new_s = s.replace(".", ",", 4)
+print(new_s)
