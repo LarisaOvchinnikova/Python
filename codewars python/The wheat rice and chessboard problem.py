@@ -1,3 +1,5 @@
+https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7
+
 def squares_needed(grains):
     s = 0
     cells = 0
