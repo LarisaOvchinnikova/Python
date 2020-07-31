@@ -96,3 +96,5 @@ print(new_s)
 s = "Apples. bananas. limes. peaches. plums. Buy now. Low prices."
 new_s = s.replace(".", ",", 4)
 print(new_s)
+
+print(range(10))

@@ -127,3 +127,9 @@ print(s) # {1, 2, 3}
 
 print(','.join(s))
 print(sorted(s, reverse = True)) # ['3', '2', '1']
+
+x1 = 3
+x2 = 4
+z = set()
+z.add(x1)
+print(z)
