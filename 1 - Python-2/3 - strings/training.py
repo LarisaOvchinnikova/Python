@@ -98,3 +98,8 @@ new_s = s.replace(".", ",", 4)
 print(new_s)
 
 print(range(10))
+
+def say_hello():
+    print("Hello!")
+
+print(say_hello())
