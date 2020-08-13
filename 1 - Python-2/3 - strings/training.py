@@ -103,3 +103,7 @@ def say_hello():
     print("Hello!")
 
 print(say_hello())
+
+x = 12
+print(type(x) == int)
+l= 0
