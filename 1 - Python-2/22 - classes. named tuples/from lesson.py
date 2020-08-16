@@ -6,7 +6,7 @@ for i in range(len(arr2)):
 
 for x,y in zip(arr1, arr2):
     print(x, y)
-
+print('----------')
 for pair in zip(arr1, arr2):
     print(pair)
 
