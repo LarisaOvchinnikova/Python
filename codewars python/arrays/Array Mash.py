@@ -5,3 +5,6 @@ def array_mash(a, b):
         res.append(a[i])
         res.append(b[i])
     return res
+
+lst = [1,2,3]
+print(lst.)
