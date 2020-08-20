@@ -1,3 +1,5 @@
+# 6 kyu
+# https://www.codewars.com/kata/5848565e273af816fb000449/train/python
 def encrypt_this(text):
     words = text.split()
     result = []

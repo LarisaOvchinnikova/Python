@@ -2,5 +2,5 @@
 def next_id(arr):
     if arr == []:
         return 0
-    r = [el for el in range(max(arr)+ 1) if el not in arr]
+    r = [el for el in range(max(arr) + 1) if el not in arr]
     return r[0] if r else max(arr)+1
