@@ -74,36 +74,44 @@
 # vowels = "aeuio"
 # letter = input("Enter letter: ")
 # print(not letter.lower() in vowels)
+#
+# s = "sky!"
+# print(s.isalpha())
+# year = "2020"
+# print(year.isdigit())
+# print("23,5".isdigit())
+# s = "May9"
+# print(s.isalnum())
+# print(" ".join(["a", "b", "c"]))
+#
+# name = "**Alice"
+# print(name.lstrip("*"))
+# print("     Hello world!  ". lstrip())
+# password = "qwerty!!!"
+# print(password.rstrip("!"))
+# print("A like Python!    ". rstrip())
+# s = "Sky is blue and the weather is beautiful"
+# new_s = s.replace("is", "was")
+# print(new_s)
+# s = "Apples. bananas. limes. peaches. plums. Buy now. Low prices."
+# new_s = s.replace(".", ",", 4)
+# print(new_s)
+#
+# print(range(10))
+#
+# def say_hello():
+#     print("Hello!")
+#
+# print(say_hello())
+#
+# x = 12
+# print(type(x) == int)
+# l= 0
 
-s = "sky!"
-print(s.isalpha())
-year = "2020"
-print(year.isdigit())
-print("23,5".isdigit())
-s = "May9"
-print(s.isalnum())
-print(" ".join(["a", "b", "c"]))
-
-name = "**Alice"
-print(name.lstrip("*"))
-print("     Hello world!  ". lstrip())
-password = "qwerty!!!"
-print(password.rstrip("!"))
-print("A like Python!    ". rstrip())
-s = "Sky is blue and the weather is beautiful"
-new_s = s.replace("is", "was")
-print(new_s)
-s = "Apples. bananas. limes. peaches. plums. Buy now. Low prices."
-new_s = s.replace(".", ",", 4)
-print(new_s)
-
-print(range(10))
-
-def say_hello():
-    print("Hello!")
-
-print(say_hello())
-
-x = 12
-print(type(x) == int)
-l= 0
+s = 'hfhghghfhfhhf'
+for letter in s:
+    if letter.isdigit():
+        print("yes")
+        break
+else:
+    print ('no')
