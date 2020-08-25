@@ -6,7 +6,14 @@ for i in range(len(arr2)):
 
 for x,y in zip(arr1, arr2):
     print(x, y)
-print('----------')
+print('----------================')
+a=[1,2,3]
+b =["a",'b','c']
+z = []
+for x,y in zip(a,b):
+    z.append(x,y)
+print(z)
+print("===================")
 for pair in zip(arr1, arr2):
     print(pair)
 
