@@ -108,10 +108,17 @@
 # print(type(x) == int)
 # l= 0
 
-s = 'hfhghghfhfhhf'
-for letter in s:
-    if letter.isdigit():
-        print("yes")
-        break
-else:
-    print ('no')
+# s = 'hfhghghfhfhhf'
+# for letter in s:
+#     if letter.isdigit():
+#         print("yes")
+#         break
+# else:
+#     print ('no')
+
+arr = [5, 2, 1, 4, 5, 2, 3, 4, 2, 0]
+print(arr.index(1))  # 2
+
+words = ["apple", "kiwi", "banana", "peach"]
+print("apple" in words) # True
+print("apples" in words) # False
