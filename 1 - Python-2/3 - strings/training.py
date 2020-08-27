@@ -125,15 +125,26 @@
 
 
 # Перевод в двоичную систему 1 case
-s = 5
-# print(bin(s))
-# print(type(bin(s))) # str
-p = (bin(s))[2:]
-print(p)
-# Перевод в двоичную систему 2 case
-n = 5
-b = ''
-while n > 0:
-    b = str(n % 2) + b
-    n = n // 2
-print(b)
+# s = 5
+# # print(bin(s))
+# # print(type(bin(s))) # str
+# p = (bin(s))[2:]
+# print(p)
+# # Перевод в двоичную систему 2 case
+# n = 5
+# b = ''
+# while n > 0:
+#     b = str(n % 2) + b
+#     n = n // 2
+# print(b)
+
+# print(" ".isupper())
+string = "hey"
+print(string)
+s = [ord(el) for el in string]
+print(s)
+s = [bin(ord(el))[2:].rjust(8, "0") for el in string]
+print(s)
+s = "".join([bin(ord(el))[2:].rjust(8, "0") for el in string])
+print(s)
+print("".join([el * 3 for el in s]))
