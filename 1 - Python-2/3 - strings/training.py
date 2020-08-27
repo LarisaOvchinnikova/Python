@@ -116,9 +116,24 @@
 # else:
 #     print ('no')
 
-arr = [5, 2, 1, 4, 5, 2, 3, 4, 2, 0]
-print(arr.index(1))  # 2
+# arr = [5, 2, 1, 4, 5, 2, 3, 4, 2, 0]
+# print(arr.index(1))  # 2
+#
+# words = ["apple", "kiwi", "banana", "peach"]
+# print("apple" in words) # True
+# print("apples" in words) # False
 
-words = ["apple", "kiwi", "banana", "peach"]
-print("apple" in words) # True
-print("apples" in words) # False
+
+# Перевод в двоичную систему 1 case
+s = 5
+# print(bin(s))
+# print(type(bin(s))) # str
+p = (bin(s))[2:]
+print(p)
+# Перевод в двоичную систему 2 case
+n = 5
+b = ''
+while n > 0:
+    b = str(n % 2) + b
+    n = n // 2
+print(b)
