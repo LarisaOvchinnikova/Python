@@ -139,12 +139,20 @@
 # print(b)
 
 # print(" ".isupper())
-string = "hey"
-print(string)
-s = [ord(el) for el in string]
-print(s)
-s = [bin(ord(el))[2:].rjust(8, "0") for el in string]
-print(s)
-s = "".join([bin(ord(el))[2:].rjust(8, "0") for el in string])
-print(s)
-print("".join([el * 3 for el in s]))
+# string = "hey"
+# print(string)
+# s = [ord(el) for el in string]
+# print(s)
+# s = [bin(ord(el))[2:].rjust(8, "0") for el in string]
+# print(s)
+# s = "".join([bin(ord(el))[2:].rjust(8, "0") for el in string])
+# print(s)
+# print("".join([el * 3 for el in s]))
+def pattern(n):
+     arr = [list(range(n, i - 1, -1)) for i in range(1, n+1)]
+     arr1 = []
+     for el in arr:
+          s = "".join([str(i) for i in el])
+          arr1.append(s)
+     return "\n".join(arr1)
+print(pattern(5))
