@@ -35,3 +35,6 @@ class MathList(list):
 list1 = MathList([1,2,3])
 list2 = MathList([10,20, 30, 40, 50])
 print(add_zeros(list1, list2))
+
+
+help(str)

@@ -156,3 +156,12 @@ def pattern(n):
           arr1.append(s)
      return "\n".join(arr1)
 print(pattern(5))
+
+# преобразование числа в двоичную сичтему и обратно
+def reverse_bits(n):
+    return int(bin(n)[2:][::-1], 2)
+n = 417
+b = bin(n)[2:]
+print(b)   # 110100001
+dec = int(b, 2)
+print(dec)   # 417
