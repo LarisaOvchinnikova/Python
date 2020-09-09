@@ -7,4 +7,4 @@ def array_mash(a, b):
     return res
 
 lst = [1,2,3]
-print(lst.)
+print(lst)
