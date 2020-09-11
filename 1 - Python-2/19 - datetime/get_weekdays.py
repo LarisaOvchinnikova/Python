@@ -16,18 +16,23 @@ end = date(2021, 1, 1)
 
 # Extend weekends
 # https://www.codewars.com/kata/5be7f613f59e0355ee00000f/train/python
-start = date(1800, 1, 1)
-end = date(2500, 12, 31)
+start = date(2016, 1, 1)
+end = date(2020, 12, 31)
 print(start)
-date = start
+data = start
+dat = start
+while data < end:
+    if data.weekday() == 4 and data.day == 1:
+        dat = data
+        break
+    data = data + timedelta(1)
 count = 0
 dates = []
-while date < end:
-    # date = date + timedelta(weeks=0)
-    if date.weekday() == 4 and date.day == 1  and date.month in [1,3,5,7,8,10,12]:
-        dates.append(date.strftime("%b"))
+while dat < end:
+    if dat.day == 1 and dat.month in [1,3,5,7,8,10,12]:
+        dates.append(dat.strftime("%b"))
         count += 1
-    date = date + timedelta(weeks=0)
+    dat = dat + timedelta(weeks=1)
 
 
 print(dates)
