@@ -19,3 +19,16 @@ def solve(a,b):
         dat = dat + timedelta(weeks=1)
 
     return (dates[0], dates[-1], count)
+
+# 2 case
+from datetime import date
+
+
+def solve(a, b):
+    dates = []
+    for year in range(a, b + 1):
+        for month in 1, 3, 5, 7, 8, 10, 12:
+            if date(year, month, 1).weekday() == 4:
+                dates.append(date(year, month, 1).strftime("%b"))
+
+    return (dates[0], dates[-1], len(dates))
