@@ -8,3 +8,7 @@ def open_or_senior(data):
             res.append("Open")
 
     return res
+
+# 2 case
+def open_or_senior(data):
+    return ["Senior" if el[0] >= 55 and el[1] > 7 else "Open" for el in data]
