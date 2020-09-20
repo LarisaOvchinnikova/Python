@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/523b4ff7adca849afe000035/train/python
+https://www.codewars.com/kata/5506b230a11c0aeab3000c1f
 
 def evaporator(content, evap_per_day, threshold):
     n = 0
