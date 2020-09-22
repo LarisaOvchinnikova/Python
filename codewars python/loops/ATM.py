@@ -33,3 +33,14 @@ def solve(n):
             n -= el
             count+=1
     return count
+#  3 case:
+def solve(n):
+    if n % 10 != 0: return -1
+    value = [500, 200, 100, 50, 20, 10]
+    count = 0
+    i = 0
+    while n > 0:
+        count += n // value[i]
+        n = n % value[i]
+        i+=1
+    return count
