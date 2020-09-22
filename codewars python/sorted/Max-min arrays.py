@@ -12,3 +12,14 @@ def solve(arr):
             res.append(arr[0])
             del arr[0]
     return res
+
+#2 case
+def solve(arr):
+    arr = sorted(arr)
+    res = []
+    for i in range(0, len(arr)//2):
+        res.append(arr[-i-1])
+        res.append(arr[i])
+    if len(arr) % 2 != 0:
+        res.append(arr[len(arr)//2])
+    return res
