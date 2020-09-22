@@ -14,3 +14,9 @@ def vowel_start(st):
             word = s[i]
     res.append(word)
     return " ".join(res)
+#2 case
+def vowel_start(st):
+    s = st.lower()
+    s = "".join([el for el in s if el.isalnum()])
+    s = s.replace("a", " a").replace("o", " o").replace("e", " e").replace("i", " i").replace("u", " u")
+    return " ".join(s.split())
