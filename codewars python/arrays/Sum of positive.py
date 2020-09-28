@@ -7,3 +7,7 @@ def positive_sum(arr):
         if i > 0:
             sum = sum + i
     return sum
+
+# 2 case
+def positive_sum(arr):
+    return sum([el for el in arr if el > 0])
