@@ -23,3 +23,16 @@ def solve(arr):
     if len(arr) % 2 != 0:
         res.append(arr[len(arr)//2])
     return res
+
+# 3 case
+def solve(arr):
+    arr = sorted(arr)
+    res = []
+    while len(arr)>1:
+        res.append(arr[-1])
+        arr.pop()
+        res.append(arr[0])
+        arr.pop(0)
+    if len(arr) > 0:
+        res.append(arr[0])
+    return res
