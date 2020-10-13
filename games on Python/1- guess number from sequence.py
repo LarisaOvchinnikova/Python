@@ -1,7 +1,7 @@
 from random import randint, choice
 attempts = int(input("How many times you want to play? "))
 for i in range(attempts):
-    option = choice(["arithmetic", "geometric"]e
+    option = choice(["arithmetic", "geometric"]
     n1 = randint(1,10) # first element in sequence
     length = randint(5, 10) # length of sequence
     coefficient = randint(1, 5) # coefficient in sequence
