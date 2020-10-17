@@ -66,6 +66,7 @@ dct = {
     "d": 23
 }
 print(dct.items())
+arr = sorted()
 print(sorted(dct.items(), key=lambda x: x[1]))
 
 #==================
