@@ -1,5 +1,5 @@
 from random import randint
-money = int(input("How much money in start of game? "))
+money = int(input("How much money at start of game? "))
 computer_money = money
 your_money = money
 step = 0
