@@ -19,3 +19,8 @@ def calculate_string(st):
     elif op == "/":
         res = num1 / num2
     return str(round(res))
+
+# 2 case:
+def calculate_string(st):
+    arr = [el for el in st if el.isnumeric() or el in '.+-*/']
+    return str(round(eval("".join(arr))))
