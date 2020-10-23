@@ -148,20 +148,74 @@
 # s = "".join([bin(ord(el))[2:].rjust(8, "0") for el in string])
 # print(s)
 # print("".join([el * 3 for el in s]))
-def pattern(n):
-     arr = [list(range(n, i - 1, -1)) for i in range(1, n+1)]
-     arr1 = []
-     for el in arr:
-          s = "".join([str(i) for i in el])
-          arr1.append(s)
-     return "\n".join(arr1)
-print(pattern(5))
+# def pattern(n):
+# #      arr = [list(range(n, i - 1, -1)) for i in range(1, n+1)]
+# #      arr1 = []
+# #      for el in arr:
+# #           s = "".join([str(i) for i in el])
+# #           arr1.append(s)
+# #      return "\n".join(arr1)
+# # print(pattern(5))
+# #
+# # # преобразование числа в двоичную сичтему и обратно
+# # def reverse_bits(n):
+# #     return int(bin(n)[2:][::-1], 2)
+# # n = 417
+# # b = bin(n)[2:]
+# # print(b)   # 110100001
+# # dec = int(b, 2)
+# # print(dec)   # 417
 
-# преобразование числа в двоичную сичтему и обратно
-def reverse_bits(n):
-    return int(bin(n)[2:][::-1], 2)
-n = 417
-b = bin(n)[2:]
-print(b)   # 110100001
-dec = int(b, 2)
-print(dec)   # 417
+user = {
+  "name": "Alice",
+  "age": 30,
+  "is_Student": True,
+}
+del user["is_Student"]
+print(user)
+mountains = {
+	     4810: 'Mont Blanc',
+	     8848: 'Mount Everest',
+	     4317: 'Mount Shasta',
+             5881: 'Kilimanjaro'
+ }
+del mountains[4810]
+print(mountains)
+
+user = {
+  "name": "Alice",
+  "age": 30,
+  "is_Student": True,
+}
+print("age" in user)  # True
+print("address" in user)  # False
+
+mountains = {
+  4810: "Mont Blanc",
+  8848: "Mount Everest",
+  4317: "Mount Shasta",
+  5881: "Kilimanjaro"
+ }
+print(5165 in mountains)
+mountains = {
+  4810: "Mont Blanc",
+  8848: "Mount Everest",
+  4317: "Mount Shasta",
+  5881: "Kilimanjaro",
+  5165: "Ararat"
+ }
+mount_keys = list(mountains.keys())
+print(mount_keys)
+mount_values = list(mountains.values())
+print(mount_values)
+mount_elements = list(mountains.items())
+print(mount_elements)
+
+timetable = {
+  8.10: 'morning exercise',
+  9.15: 'breakfast',
+  9.45: 'college',
+ 15.30: 'lunch'
+}
+for event in timetable:
+	print(event, ':', timetable[event])
