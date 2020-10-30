@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/599db0a227ca9f294b0000c8
 def test(r):
     av = round(sum(r) / len(r), 3)
     dct = {
