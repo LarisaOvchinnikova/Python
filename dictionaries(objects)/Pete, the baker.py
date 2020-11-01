@@ -7,3 +7,7 @@ def cakes(recipe, available):
         else:
             return 0
     return min(arr)
+
+# 2 case
+def cakes(recipe, available):
+    return min([available.get(key,0)//recipe[key] for key in recipe])
