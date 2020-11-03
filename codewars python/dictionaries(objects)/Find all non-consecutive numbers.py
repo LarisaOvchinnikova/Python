@@ -6,3 +6,6 @@ def all_non_consecutive(arr):
             res.append({"i": i, "n": arr[i]})
     return res
 
+# 2 case
+def all_non_consecutive(arr):
+    return [{"i": i, "n": arr[i]} for i in range(1, len(arr)) if arr[i] != arr[i-1] + 1]
