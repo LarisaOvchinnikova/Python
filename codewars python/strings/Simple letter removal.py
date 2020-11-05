@@ -8,3 +8,11 @@ def solve(st,k):
         k -= c
         i += 1
     return st
+
+
+# 2 case
+def solve(st,k):
+    s = sorted(st)[:k]
+    for i in range(len(s)):
+        st = st.replace( s[i] , '', 1 )
+    return st
