@@ -1,5 +1,6 @@
 from random import choice
 arr = ["computer", "tomato", "sunny", "light", "zebra", "crocodile", "panda", "monkey"]
+arr = ["cat", "crocodile", "bear", "monkey", "mouse", "lion","turtle","rat","racoon","penguin","kangaroo","panda","donkey", "hamster","zebra","elephant","goat","horse","sheep","deer","giraffe","koala","leopard","cheetah","ostrich","eagle","spider","tortoise","shark","whale","chicken", "rhinosorus", "marmot","pig","dolphin", "owl", "armadilo", "dog", "wolf", "cow", "skunk", "opossum", "camel", "alligator", "squirrel", "flamingo", "octopus", "squid", "snail", "hippopotamus", "yak"]
 
 word = choice(arr)
 # print(word)
