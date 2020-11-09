@@ -52,6 +52,9 @@ def calc(key):
                 calc_entry.insert(0, "-")
         except IndexError:
             pass
+# кнопка стирания последнего символа (моя)
+    elif key == "Backspace":
+        calc_entry.delete()
     else:
         if "=" in calc_entry.get():
             calc_entry.delete(0, END)
@@ -63,7 +66,7 @@ bttn_list = [
     "7", "8", "9", "+", "-",
     "4", "5", "6", "*", "/",
     "1", "2", "3", "-/+", "=",
-    "0", ".", "C", "**"
+    "0", ".", "C", "**", "Backspace"
 ]
 r = 1
 c = 0
