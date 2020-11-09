@@ -54,7 +54,7 @@ def calc(key):
             pass
 # кнопка стирания последнего символа (моя)
     elif key == "Backspace":
-        calc_entry.delete()
+        calc_entry.delete(len(calc_entry.get())-1)
     else:
         if "=" in calc_entry.get():
             calc_entry.delete(0, END)
