@@ -7,14 +7,16 @@ def add():
 
 def diff():
     result.delete(0, END)
-    result.insert(0,int(num1.get()) - int(num2.get()))
+    result.insert(0, int(num1.get()) - int(num2.get()))
+
 
 def mult():
     result.delete(0, END)
-    result.insert(0,int(num1.get()) * int(num2.get()))
+    result.insert(0, int(num1.get()) * int(num2.get()))
+
 def div():
     result.delete(0, END)
-    result.insert(0,int(num1.get()) / int(num2.get()))
+    result.insert(0, int(num1.get()) / int(num2.get()))
 
 root = Tk()
 root.title("Sum")
