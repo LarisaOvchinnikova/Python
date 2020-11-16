@@ -80,7 +80,7 @@
 # Если осталось ноль палочек, сообщить, что пользователь выиграл и закончить работу
 # Вернуться на пункт 3
 
-print("Let's play in game '21 stick")
+print("Let's play in game '21 stick'")
 print("In this game, there are 21 sticks lying in a pile.\nPlayers take turns taking 1, 2, or 3 sticks.\nThe last person to take a stick wins.")
 sticks = 21
 step = 1
@@ -88,7 +88,7 @@ print(f"Now there are {sticks} sticks")
 while sticks > 0:
     print(f"Round: {step}")
     user_st = int(input("Enter your number of sticks: "))
-    if user_st > 3:
+    if user_st > 3 or user_st < 1 or user_st > sticks:
         print("Wrong number of sticks (1,2,3 only!)")
         continue
     sticks -= user_st
