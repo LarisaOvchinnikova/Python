@@ -79,7 +79,7 @@
 # Сообщить, сколько палочек осталось
 # Если осталось ноль палочек, сообщить, что пользователь выиграл и закончить работу
 # Вернуться на пункт 3
-
+from random import randint
 print("Let's play in game '21 stick'")
 print("In this game, there are 21 sticks lying in a pile.\nPlayers take turns taking 1, 2, or 3 sticks.\nThe last person to take a stick wins.")
 sticks = 21
@@ -98,7 +98,7 @@ while sticks > 0:
         break
     comp_st = sticks % 4
     if comp_st == 0:
-        comp_st+=1
+        comp_st = randint(1, min(3, sticks))
     sticks -= comp_st
     print(f"Computer took {comp_st} sticks. Now there are {sticks} sticks")
     if sticks == 0:
