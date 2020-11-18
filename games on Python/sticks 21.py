@@ -103,6 +103,8 @@ while sticks > 0:
     print(f"Computer took {comp_st} sticks. Now there are {sticks} sticks")
     if sticks == 0:
         print("Computer won!")
+        print("\033[1;32;40m YOU WON  \n")
+
         break
     step+=1
     print("-"*20)
