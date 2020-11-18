@@ -15,7 +15,7 @@ days = [('Monday', 'Chest+biceps', '45'),
 def get_third(element):
     return element[2]
 
-print(sorted(days,key=get_third,r))   # сортировка по посл.элементу таплс
+print(sorted(days,key=get_third))   # сортировка по посл.элементу таплс
 
 def get_second(element):
     return element[1]

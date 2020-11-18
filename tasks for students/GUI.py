@@ -21,7 +21,7 @@ def div():
 root = Tk()
 root.title("Sum")
 mainframe = ttk.Frame(root, padding="10")
-mainframe.grid(column=3, row=3)
+mainframe.grid(column=4, row=3)
 
 # создадим окна для ввода чисел
 num1 = Entry(root)
