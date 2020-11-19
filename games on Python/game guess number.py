@@ -17,7 +17,7 @@ while True:
     if answer == x:
         print("You get it!")
         end = datetime.today()
-        print(f"You needed {count} attempts. It took {(end - start).seconds} seconds")
+        print(f"You needed {count} tries. It took {(end - start).seconds} seconds")
         break
 
 

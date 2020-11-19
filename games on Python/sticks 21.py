@@ -95,6 +95,7 @@ while sticks > 0:
     print(f"You took {user_st} sticks. Now there are {sticks} sticks")
     if sticks == 0:
         print("You won!")
+        print("\033[1;32;40m YOU WON  \n")
         break
     comp_st = sticks % 4
     if comp_st == 0:
@@ -103,7 +104,7 @@ while sticks > 0:
     print(f"Computer took {comp_st} sticks. Now there are {sticks} sticks")
     if sticks == 0:
         print("Computer won!")
-        print("\033[1;32;40m YOU WON  \n")
+        print("\033[1;31;40m COMPUTER WON")
 
         break
     step+=1

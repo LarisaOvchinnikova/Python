@@ -9,3 +9,8 @@ def sort_by_num(s):
     arr = s1.split()
     arr = sorted(arr, key=lambda el:el[1])
     return "".join(arr)
+
+# 2 case
+def sort_by_num(s):
+    arr = [s[i]+s[i+1] for i in range(0, len(s), 2)]
+    return "".join(sorted(arr, key=lambda el:el[1]))
