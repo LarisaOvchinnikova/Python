@@ -8,5 +8,5 @@ def main():
     move()
     combat()
     get_coins()
-    buy_health();
+    buy_health()
     print_status()
