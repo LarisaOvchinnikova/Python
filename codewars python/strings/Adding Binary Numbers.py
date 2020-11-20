@@ -36,3 +36,21 @@ def add(a,b):
     else:
         s = s.lstrip("0")
     return s if s else "0"
+
+# 2 case
+def add(a,b):
+    a = [1 if el =="1" else 0 for el in a]
+    b = [1 if el =="1" else 0 for el in b]
+    n1 = sum([el * 2** (len(a)-i-1) for i,el in enumerate(a)])
+    n2 = sum([el * 2** (len(b)-i-1) for i,el in enumerate(b)])
+    n = n1 + n2
+    s = ''
+    while n >= 2:
+        last = n % 2
+        if last==1:
+            s += "1"
+        else:
+            s+= "0"
+        n //=2
+    s += "1" if n==1 else "0"
+    return s[::-1]
