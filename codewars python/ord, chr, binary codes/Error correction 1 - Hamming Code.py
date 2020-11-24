@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/568dcc3c7f12767a62000038
+#https://www.codewars.com/kata/5ef9ca8b76be6d001d5e1c3e
 def encode(string):
     s = "".join([bin(ord(el))[2:].rjust(8, "0") for el in string])
     return "".join([el * 3 for el in s])
