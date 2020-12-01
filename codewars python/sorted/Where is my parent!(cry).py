@@ -13,3 +13,8 @@ def find_children(s):
 # 2 case
 def find_children(dancing_brigade):
     return ''.join(sorted(dancing_brigade, key=lambda el:(el.upper(), el.islower())))
+
+
+# 3 case
+def find_children(d):
+    return ''.join(sorted({(c*d.lower().count(c)).title() for c in d.lower()}))

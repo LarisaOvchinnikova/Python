@@ -8,3 +8,5 @@ def cycle(n) :
         d = d%n*10 + 9
         count += 1
     return count
+
+a = pwo
