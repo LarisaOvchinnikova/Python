@@ -102,3 +102,6 @@ for word in name:
     newName += ' '
 print(newName[0:-1])
 
+
+ar = [1,2,3]
+print(isinstance(ar, list))
