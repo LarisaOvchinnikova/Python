@@ -8,3 +8,14 @@ def check_password(s):
     s5 = len([el for el in s if el in "!@#$%^&*?"]) > 0
     s6 =  len([el for el in s if el not in string.ascii_letters + string.digits + "!@#$%^&*?"])==0
     return "valid" if s1 and s2 and s3 and s4 and s5 and s6 else "not valid"
+
+# 2 case
+import string
+def check_password(s):
+    s1 = 8 <= len(s) <= 20
+    s2 = [el for el in s if el in string.ascii_uppercase]
+    s3 = [el for el in s if el in string.ascii_lowercase]
+    s4 = [el for el in s if el.isdigit()]
+    s5 = [el for el in s if el in "!@#$%^&*?"]
+    s6 =  [el for el in s if el not in string.ascii_letters + string.digits + "!@#$%^&*?"]
+    return "valid" if s1 and s2 and s3 and s4 and s5 and not s6 else "not valid"
