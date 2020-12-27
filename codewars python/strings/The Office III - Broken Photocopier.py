@@ -5,6 +5,6 @@ def broken(inp):
         s += "1" if el == "0" else "0"
     return s
 
-#2case
+# 2case
 def broken(inp):
     return "".join(["0" if el == "1" else "1" for el in inp])
