@@ -138,3 +138,9 @@ s.center(width,fillchar=" ")
 s = "123"
 s.maketrans("123","abc")
 print(s)
+# -------------------------
+# сплит строки с сохранением пробелов
+import re
+s = '\n3 pigs\nmet 1 wolf\n2 days ago'
+s = re.split(r'(\W+)', s)  # split and keep spaces, newlines, etc.
+print(s)
