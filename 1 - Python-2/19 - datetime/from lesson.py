@@ -17,6 +17,7 @@ print(dir(date)) # все методы класса
 day = datetime.today()
 print(day) #2020-07-13 23:25:25.825200
 print(day.hour)  # 23
+print(day.)
 print(day.time()) # 23:26:20.438200
 print(dir(datetime))
 
