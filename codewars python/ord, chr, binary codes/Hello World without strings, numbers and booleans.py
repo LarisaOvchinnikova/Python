@@ -9,7 +9,7 @@ def hi_all():
     seven = six + one
     eight = two * four
     nine = three * three
-    ten = two *  five
+    ten = two * five
     H = chr(six * six + six * six)
     e = chr(ten * ten + one)
     l = chr(ten * ten + eight)
