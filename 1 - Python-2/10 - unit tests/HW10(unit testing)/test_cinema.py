@@ -27,3 +27,9 @@ def cinema(x, y):
 def test_cinema():
     assert cinema(1, 1) == "BG"
     assert cinema(2, 1) == "BGB"
+
+ def _():
+        try:
+            test.expect(cinema)
+        except NameError:
+            test.fail("cinema function doesn't exist")
