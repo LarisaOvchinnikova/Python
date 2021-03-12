@@ -18,4 +18,4 @@ while not answer == num:
 end = datetime.today()
 print(f"You got it! It is {num}")
 diff = (end - start).seconds
-print(f"It took {diff} seconds. You had {count} attempts")
+print(f"It took you {diff} seconds. You had {count} tries")
