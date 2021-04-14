@@ -1,5 +1,5 @@
 from random import randint, choice
-attempts = int(input("How many times you want to play? "))
+attempts = int(input("How many times do you want to play? "))
 for i in range(attempts):
     option = choice(["arithmetic", "geometric"]
     n1 = randint(1,10) # first element in sequence
