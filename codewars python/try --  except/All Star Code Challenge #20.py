@@ -9,3 +9,11 @@ def add_arrays(a, b):
     if len(a) != len(b):
         raise ValueError
     return [a[i] + b[i] for i in range(len(a))]
+
+# 3 case
+def add_arrays(a, b):
+    try:
+        arr = [a[i]+b[i] for i in range(max(len(a), len(b)))]
+    except:
+        raise LengthError
+    return arr
