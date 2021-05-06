@@ -39,7 +39,8 @@ class TestClass(object):
 
     def test_random(x):
         """Function should work for random tests"""
-        x = randint(-100, 100)
-        actual = double(x)
-        expected = _double(x)
-        assert actual == expected, f"Function should work for argument ({x}): expected {expected}, got {actual}"
+        for i in range(10):
+            x = randint(-100, 100)
+            actual = double(x)
+            expected = _double(x)
+            assert actual == expected, f"Function should work for argument ({x}): expected {expected}, got {actual}"
