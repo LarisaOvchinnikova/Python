@@ -8,7 +8,12 @@
 class TestClass(object):
     def test_1(self):
         """Variable created"""
-        assert number == 10, f"expected value equal to 10"
+        assert number == "a", f"expected value equal to 'a'"
+
+    def test_2(self):
+        """Variable created"""
+        assert a == 1, f"expected value equal to 1"
 
 #Completed solution
-number = 10
+number = "a"
+a = 1
